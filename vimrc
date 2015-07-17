@@ -6,11 +6,22 @@ set noswapfile
 set wildmode=longest,list
 set wildmenu
 set path=$PWD/**
-set autochdir
+"set autochdir
 set rtp+=~/.vim/bundle/Vundle.vim
 set nocompatible              " be iMproved, required
 
-filetype off                  " required
+set nocompatible                " choose no compatibility with legacy vi
+syntax enable
+set encoding=utf-8
+set showcmd                     " display incomplete commands
+filetype plugin indent on       " load file type plugins + indentation
+
+"" Whitespace
+set nowrap                      " don't wrap lines
+set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
+set expandtab                   " use spaces, not tabs (optional)
+set backspace=indent,eol,start  " backspace through everything in insert mode
+
 
 " set the runtime path to include Vundle and initialize
 call vundle#begin()
@@ -25,15 +36,39 @@ call vundle#begin()
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
+Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'davidhalter/jedi-vim'
-Plugin 'kshenoy/vim-signature'
+" Plugin 'kshenoy/vim-signature'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'rking/ag.vim'
+Plugin 'xolox/vim-notes'
+Plugin 'xolox/vim-misc'
+Plugin 'powerline/powerline'
+Plugin 'janko-m/vim-test'
+Plugin 'alfredodeza/pytest.vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'wincent/terminus'
+Plugin 'tpope/vim-rails'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'tmhedberg/matchit'
+Plugin 'vim-scripts/project.tar.gz'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-endwise'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'jgdavey/tslime.vim'
+Plugin 'tpope/vim-dispatch'
+
+"Plugin 'bling/vim-airline'
 " Plugin 'rkulla/pydiction'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -56,11 +91,12 @@ filetype plugin indent on    " required
 syntax on
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
+" map  n <Plug>(easymotion-next)
+" map  N <Plug>(easymotion-prev)
 let g:EasyMotion_smartcase = 1
 let mapleader=" "
 nnoremap <leader>sop :source ~/.vimrc<cr>
+nnoremap <leader>vun :source ~/.vimrc<cr>:VundleInstall<cr>
 
 for fpath in split(globpath('~/.vim/plugin', '*.vim'), '\n')
   exe 'source' fpath
@@ -105,3 +141,44 @@ endfunction
 au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 
 nnoremap zz zt
+
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+    
+set laststatus=2
+
+set guifont=Inconsolata\ for\ Powerline:h15
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set t_Co=256
+set fillchars+=stl:\ ,stlnc:\
+"set term=xterm-256color
+set termencoding=utf-8
+
+nnoremap <leader>nt :NERDTreeToggle<cr>
+nnoremap <leader>rem :Note reminder<cr>
+nnoremap <leader>tod :Note todo<cr>
+nnoremap <leader>rc :e ~/.vimrc<cr>
+
+set nocursorline
+" hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred
+
+
+" set grepprg=ack
+
+set cf  " Enable error files & error jumping.
+set clipboard+=unnamed  " Yanks go on clipboard instead.
+set timeoutlen=250
+
+set showmatch  " Show matching brackets.
+set mat=5  " Bracket blinking.
+
+
+let g:ackprg = 'ack'
+let $PATH .= ':/usr/local/bin/'
+nnoremap <leader><leader> <c-^>
+
+set tags=./tags;
+let g:ycm_collect_identifiers_from_tags_files = 1
