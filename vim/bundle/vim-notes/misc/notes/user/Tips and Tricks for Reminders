@@ -1,0 +1,43 @@
+Tips and Tricks for Reminders
+
+
+→ Vim
+
+   • Run Python inside Vim
+      ◦ Write normal python inside any file
+      ◦ Visually select it
+      ◦ Type “!python <cr>” so that the code gets replaced by output
+
+   • Motion and Jumps
+      ◦ <backtick> . -> Jump to last editing location
+      ◦ <backtick><backtick> -> Jump to previous location, swap
+      ◦ <C-O> - Backtrack jumps
+      ◦ <tab> - Forward backtrack jumps
+
+
+   • Mode switching
+      ◦ A - Insert mode to end of line
+      ◦ I - Insert mode at beggining of line
+
+   • Searching
+      ◦ * - Search word under cursor
+
+   • Surround Plugin
+      ◦ cs”’ - Change Surrounding “” with ‘’
+      ◦ <Visually Select> S <p> - Enclose selected text with <p></p>
+
+
+
+
+
+
+
+→ Zsh
+
+   • Globbing
+      
+      ◦ List only files → 
+      ◦ List only directories → 
+      ◦ List any file in every folder with txt extension → ls zsh_demo/**/*.txt
+      ◦ List files in folders directly inside current → ls zsh_demo/*
+      ◦ List files modified in last hour → print -l ./**/*(mh-1)

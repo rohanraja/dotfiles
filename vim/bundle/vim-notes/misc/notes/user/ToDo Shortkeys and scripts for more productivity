@@ -1,0 +1,70 @@
+ToDo Shortkeys and scripts for more productivity
+
+→ General
+
+   • Reinstall DigitalOcean VPS
+   • Refurburish Blog
+   • Collaborate on some open source project
+   • Create daywise short term goal
+   • Create expert industry level production toolbelt
+   • Find famous and interesting developers to take inspiration from
+   • Refurburish TMUX
+   • Create new user, OSX
+   • Create my own snippets 
+   • Fix CTRL key - Remap to command
+   • Follow intersting Developers on TWITTER
+   • Better browser and terminal navigation and copy pasting
+
+→ General Development Environment
+
+   • Global Shortcuts for OSX
+      ◦ Open vim notes
+      ◦ Open Nettop, Htop and other monitoring tools
+
+   • Monitoring Tool
+      ◦ Nettop / Htop better interactivity and searching
+
+   • Searching and stuff
+      ◦ Master ACK search tool
+      ◦ Add html.erb to html in ackrc. Do similar for others also
+
+→ OSX
+
+   • Installed Karabiner
+   • Changed key repeat time for speed
+   • Remapped left command key to control key
+   
+
+→ Zsh 
+  
+   • Find method to print trees
+   • Function to add current directory to PATH
+   • Scrolling less with mouse
+
+→ Tmux
+   
+   • Rebind prefix key
+   • Quickly create new sessions/playgrounds
+   • For a rails app, create tmux session with panes for tests, console, server, editor
+   • Show network speed of current process of tmux pane or window in status-line 
+   • Fix window title of tmux
+   • Shortcut key to jump to “ToDo Notes” from anywhere inside tmux
+
+→ Vim
+
+   • Force quit shortcut
+   • Reindent whole file shortcut
+   • Switching buffers and files
+   • Auto ctags
+   • Fix double leader key to swap windows bug
+   • Fix selection colors and status bar colors
+   • Check YCM Plugin - it may be taking too much resources
+
+
+→ Rails
+
+   • Chrome Plugin - On clicking an html, goto that particular code in rails/angular
+
+→ HTML
+
+   • Goto CSS of class/tag on cursor
