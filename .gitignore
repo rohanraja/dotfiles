@@ -1,3 +1,4 @@
-vim/bundle
+/vim/bundle/*
+!/vim/bundle/vim-notes/misc/notes
 *.swp
 vim/plugin/vim-plugin-starter-kit/
