@@ -86,3 +86,14 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh/zsh-git-prompt/zshrc.sh
 export PROMPT="${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%} % %{$reset_color%}"
+
+set -o vi
+# alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias res="source ~/.zshrc"
+alias servethis="python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()'"
+
+for file in ~/.zsh/functions/*; do
+    source "$file"
+done
+
+
