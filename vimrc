@@ -182,3 +182,8 @@ nnoremap <leader><leader> <c-^>
 
 set tags=./tags;
 let g:ycm_collect_identifiers_from_tags_files = 1
+
+" Show file name as the window title in tmux
+autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
+autocmd VimLeave * call system("tmux rename-window bash")
+
