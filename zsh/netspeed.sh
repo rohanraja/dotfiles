@@ -30,7 +30,7 @@ netspeed() {
     TXDIF_ECHO="↑ ${TXDIF}K/s"
   fi
 
-  echo -e "#[fg=red]${RXDIF_ECHO} #[fg=blue]${TXDIF_ECHO}"
+  echo -e "#[fg=colour221]${RXDIF_ECHO} #[fg=green]${TXDIF_ECHO}"
   return 0
 }
 
