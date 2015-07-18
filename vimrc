@@ -152,10 +152,13 @@ set laststatus=2
 set guifont=Inconsolata\ for\ Powerline:h15
 let g:Powerline_symbols = 'fancy'
 set encoding=utf-8
-set t_Co=256
 set fillchars+=stl:\ ,stlnc:\
 "set term=xterm-256color
 set termencoding=utf-8
+
+set t_Co=256
+" Tap double space to easily switch to last buffer
+nnoremap <leader><Space> <c-^>
 
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>rem :Note reminder<cr>
@@ -178,7 +181,6 @@ set mat=5  " Bracket blinking.
 
 let g:ackprg = 'ack'
 let $PATH .= ':/usr/local/bin/'
-nnoremap <leader><leader> <c-^>
 
 set tags=./tags;
 let g:ycm_collect_identifiers_from_tags_files = 1
@@ -187,3 +189,10 @@ let g:ycm_collect_identifiers_from_tags_files = 1
 autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
 autocmd VimLeave * call system("tmux rename-window bash")
 
+" Move lines up and down easily
+map <S-k> :m -2<CR>
+map <S-j> :m +1<CR>
+
+" Page up and down with SHIFT+Arrow keys
+map <S-Up> <PageUp>
+map <S-Down> <PageDown>

@@ -97,3 +97,5 @@ for file in ~/.zsh/functions/*; do
 done
 
 
+# To enable Ctrl+s in vim for saving
+stty -ixon

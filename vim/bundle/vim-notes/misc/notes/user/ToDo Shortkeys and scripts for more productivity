@@ -1,5 +1,6 @@
 ToDo Shortkeys and scripts for more productivity
 
+
 → General
 
    • Reinstall DigitalOcean VPS
@@ -49,6 +50,8 @@ ToDo Shortkeys and scripts for more productivity
    • Show network speed of current process of tmux pane or window in status-line 
    • Fix window title of tmux
    • Shortcut key to jump to “ToDo Notes” from anywhere inside tmux
+   • Control-P like thing to switch to sessions, windows, panes
+   • Two fingures side scroll to switch panes/windows
 
 → Vim
 
@@ -59,6 +62,7 @@ ToDo Shortkeys and scripts for more productivity
    • Fix double leader key to swap windows bug
    • Fix selection colors and status bar colors
    • Check YCM Plugin - it may be taking too much resources
+   • Undo after save. Whole history
 
 
 → Rails
