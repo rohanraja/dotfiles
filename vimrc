@@ -21,6 +21,8 @@ set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
+set background=dark
+
 
 
 " set the runtime path to include Vundle and initialize
@@ -67,6 +69,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'tpope/vim-dispatch'
+Plugin 'itchyny/calendar.vim'
 
 "Plugin 'bling/vim-airline'
 " Plugin 'rkulla/pydiction'
@@ -160,10 +163,20 @@ set t_Co=256
 " Tap double space to easily switch to last buffer
 nnoremap <leader><Space> <c-^>
 
+" Easily open file browser sidebar
 nnoremap <leader>nt :NERDTreeToggle<cr>
+
+
+" Easily open vimrc config file
+nnoremap <leader>rc :e ~/.vimrc<cr>
+
+
+" Important Notes' Shortcuts
 nnoremap <leader>rem :Note reminder<cr>
 nnoremap <leader>tod :Note todo<cr>
-nnoremap <leader>rc :e ~/.vimrc<cr>
+nnoremap <leader>task :Note time table<cr>
+
+
 
 set nocursorline
 " hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred
@@ -196,3 +209,55 @@ map <S-j> :m +1<CR>
 " Page up and down with SHIFT+Arrow keys
 map <S-Up> <PageUp>
 map <S-Down> <PageDown>
+
+map <leader>rak :Rake<CR>
+
+" Jump to last cursor position unless it's invalid or in an event handler
+autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+    \   exe "normal g`\"" |
+    \ endif
+ 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" MULTIPURPOSE TAB KEY
+" Indent if we're at the beginning of a line. Else, do completion.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-n>"
+    endif
+endfunction
+inoremap <expr> <tab> InsertTabWrapper()
+inoremap <s-tab> <c-p>
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" RENAME CURRENT FILE
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
+map <leader>n :call RenameFile()<cr>
+map <leader>re :e!<cr>
+
+command! -nargs=1 Silent
+\ | execute ':silent !'.<q-args>
+\ | execute ':redraw!'
+
+" Reload in chrome
+map <leader>l :w<cr> :Silent open /Applications/Google\ Chrome.app/<cr>:Silent chrome-cli reload<cr> 
+
+cabbr <expr> %% expand('%:p:h')
+
+" Increment/Decrement digit under the cursor
+noremap <C-b> a <ESC>h<C-a>lxh
+noremap <C-v> a <ESC>h<C-x>lxh

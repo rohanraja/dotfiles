@@ -9,10 +9,7 @@ ToDo Shortkeys and scripts for more productivity
    • Create daywise short term goal
    • Create expert industry level production toolbelt
    • Find famous and interesting developers to take inspiration from
-   • Refurburish TMUX
-   • Create new user, OSX
    • Create my own snippets 
-   • Fix CTRL key - Remap to command
    • Follow intersting Developers on TWITTER
    • Better browser and terminal navigation and copy pasting
 
@@ -52,6 +49,15 @@ ToDo Shortkeys and scripts for more productivity
    • Shortcut key to jump to “ToDo Notes” from anywhere inside tmux
    • Control-P like thing to switch to sessions, windows, panes
    • Two fingures side scroll to switch panes/windows
+   • Use Tmux for reminders, important ToDo tasks
+   • Quick Session Switch
+   • See window history
+   • Add quick notes to windows only. Persist them to a notes file
+   • Quick exit and open sessions. Don’t keep all sessions active. Prioritize
+   • Quick show/hide status bar stuff. Like quick hide network speed when not needed
+   • Quick show hide current CPU / Memory / Temperature / Network 
+   • Cycle through last open window of any session stack wise. 
+   • Playground - Quickly create a new session. Rename to playground context name
 
 → Vim
 
@@ -63,7 +69,96 @@ ToDo Shortkeys and scripts for more productivity
    • Fix selection colors and status bar colors
    • Check YCM Plugin - it may be taking too much resources
    • Undo after save. Whole history
+   • Quick hide/show line numbers
+   • Leader key. Change delay time. Add some confirm key like Enter to complete command
+   • Learn everything regarding code folding
 
+→ Tmuxninator Projects
+
+   • All notes projects
+   • Create playground project.
+   • Add mux projects to git
+   • When using shortcuts to edit files, redirect to tmux pane instead of new buffer
+   • Shortcut to quickly restart server from anywhere inside tmux session
+
+
+→ Notes and Reminders Management
+
+   • Quick searching inside all notes
+   • Create MUX project for all notes
+   • Use Tmux Status bar to display current task assigned in the time table for the time of the day. 
+    
+   • *Note taking idea:* 
+      ◦ One common place to add notes
+      ◦ A blank page pops up, on which I write the full note with subpoints and indents
+      ◦ Then option to assign tags
+         ▸ Intelligently auto-tag first
+         ▸ Then interface to allow manual tagging, edit auto-tags
+      ◦  Display notes tag wise automatically
+      ◦  Allow easy tag edit
+      ◦  Option to give priority. By default normal. Others are LOW priority and HIGH priority
+
+   • Highlight stuff in notes - to give importance   
+   • Integrate with Android for on the fly note taking
+   • OSX shortcut to jump to note taking
+   • Somehow show lines sorted in order of addition to notes file
+   • Learn more about note-vim plugin
+   • Calender like stuff. Add things to do on particular day.
+
+
+→ Python
+
+   • Work on Custom Logger Module
+
+#   • *Current task list/stack*
+      ◦ Show on tmux which ToDo task Im currently working on
+      ◦ Quickly put current line of notes buffer to the task I want to do write now
+      ◦ Current going on task can be a list/task
+      ◦ For example, while browsing notes, I can add todo lines to the current task list, and then do them
+      ◦ The current task list should be visible and accessible from tmux bar
+      ◦ Integrate with tmux status bar timer/ maybe time based alarm
+
+   • Better Browsing of Notes
+      ◦ Category wise folding of notes
+      ◦ Split Categories to different files
+
+→ Reminder Management
+
+   • *System for creating memory cards and reminders*
+      ◦ Add categorized memory cards
+      ◦ Show them on tmux status bar. Randomly. Interactive
+      ◦ Ask if I already knew that reminder
+         ▸ If I didnt, remind more often
+         ▸ Otherwise less often
+         ▸ Can be asked in the form of rating instead of yes/no for better randamization
+
+→ Workstation
+
+   • LCD Monitor
+
+→ Productivity
+
+   • Timer in Tmux status bar
+   • Learn Calender-Vim
+   • Add ToDo tasks with deadlines
+
+
+→ Tmux Status Bar
+
+   • Time Table task assigned for current hour of the day
+   • Calender Integration. 
+      ◦ Important reminder/todo/task for next day
+      ◦ Interface to add calender events
+   • Current task list’s current task
+   • Random Interactive Memory card
+   • Timer
+   • Itunes current song
+
+
+→ People Todo
+
+   • Ask Aayush how he ships stuff to Delhi
+   •
 
 → Rails
 

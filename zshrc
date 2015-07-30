@@ -27,7 +27,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -84,8 +84,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-source ~/.zsh/zsh-git-prompt/zshrc.sh
-export PROMPT="${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%} % %{$reset_color%}"
+# source ~/.zsh/zsh-git-prompt/zshrc.sh
+# export PROMPT="${ret_status}%{$fg_bold[green]%}%p %{$fg[cyan]%}%c %{$fg_bold[blue]%}$(git_super_status)%{$fg_bold[blue]%} % %{$reset_color%}"
 
 set -o vi
 # alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
@@ -99,3 +99,11 @@ done
 
 # To enable Ctrl+s in vim for saving
 stty -ixon
+
+alias c='clear'
+
+alias algohttp_8118='ssh -L 8118:localhost:8118 root@www.algomuse.com:443'
+alias algosocks_2222='ssh -L 2222:localhost:22 root@www.algomuse.com:443'
+alias pnbrowse='open -n -a /Applications/Google\ Chrome.app --args --proxy-server=http://localhost:8118 --proxy-bypass-list="localhost" --profile-directory="pndl"'
+alias urlsadds='python ~/scripts/tmp/UrlExtract.py'
+

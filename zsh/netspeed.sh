@@ -18,7 +18,7 @@ netspeed() {
   sleeptime="0.5"
   # if True then
 	if shell_is_osx; then
-    iface="en1"
+    iface="en0"
     RXB=$(netstat -i -b | grep -m 1 $iface | awk '{print $7}')
     TXB=$(netstat -i -b | grep -m 1 $iface | awk '{print $10}')
     sleep "$sleeptime"
