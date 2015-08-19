@@ -1,1 +1,1 @@
-/Users/rohanraja/dotfiles/vim/bundle/vim-notes/misc/notes/user/mltut machine learning
+/Users/rohanraja/dotfiles/vim/bundle/vim-notes/misc/notes/user/Tips and Tricks for Reminders

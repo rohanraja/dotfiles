@@ -44,7 +44,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'davidhalter/jedi-vim'
 " Plugin 'kshenoy/vim-signature'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'sirver/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'rking/ag.vim'
@@ -70,7 +70,7 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jgdavey/tslime.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'itchyny/calendar.vim'
-
+Plugin 'fatih/vim-go'
 "Plugin 'bling/vim-airline'
 " Plugin 'rkulla/pydiction'
 
@@ -186,7 +186,7 @@ set nocursorline
 
 set cf  " Enable error files & error jumping.
 set clipboard+=unnamed  " Yanks go on clipboard instead.
-set timeoutlen=250
+set timeoutlen=500
 
 set showmatch  " Show matching brackets.
 set mat=5  " Bracket blinking.
@@ -214,10 +214,10 @@ map <leader>rak :Rake<CR>
 
 " Jump to last cursor position unless it's invalid or in an event handler
 autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
- 
+      \ if line("'\"") > 0 && line("'\"") <= line("$") |
+      \   exe "normal g`\"" |
+      \ endif
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
 " Indent if we're at the beginning of a line. Else, do completion.
@@ -259,5 +259,67 @@ map <leader>l :w<cr> :Silent open /Applications/Google\ Chrome.app/<cr>:Silent c
 cabbr <expr> %% expand('%:p:h')
 
 " Increment/Decrement digit under the cursor
-noremap <C-b> a <ESC>h<C-a>lxh
-noremap <C-v> a <ESC>h<C-x>lxh
+noremap <Leader>inc a <ESC>h<C-a>lxh
+noremap <Leader>dec a <ESC>h<C-x>lxh
+nnoremap <C-y> :CtrlPTag<cr>
+
+" Goto tag and bring cursor to the top of the screen
+nnoremap <C-f> <C-]>zt
+nnoremap <C-v> *
+
+
+" Cycle buffers
+" Todo: Show list of recent buffers while cycling
+nnoremap <C-o> :bnext<CR>
+nnoremap <C-i> :bprevious<CR>
+
+" Copy current buffer to verticle split
+nnoremap <leader>v :vertical sb<CR>
+
+set ttyfast
+
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
+
+" Search for word under cursor in all files
+nnoremap L :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+" Relative line numbers
+" set relativenumber
+
+" detect when a file is changed
+set autoread 
+
+" remap esc
+inoremap jk <esc>
+
+" set paste toggle
+map <leader>v :set paste!<cr>
+
+" adjust screen upon match
+map n nzz
+map N Nzz
+
+
+" Rails test 
+map <Leader>t :call RunCurrentSpecFile()<CR>
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+
+" Run last command in a Tmux pane - Good for testing 
+map <Leader>tt :call Send_to_Tmux("!!\n\n")<CR>
+
+" Quick go to command mode
+nnoremap ; :
+
+au BufRead,BufNewFile *.go setlocal filetype=go
+
+

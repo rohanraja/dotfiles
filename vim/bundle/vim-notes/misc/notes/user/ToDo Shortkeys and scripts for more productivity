@@ -58,6 +58,7 @@ ToDo Shortkeys and scripts for more productivity
    • Quick show hide current CPU / Memory / Temperature / Network 
    • Cycle through last open window of any session stack wise. 
    • Playground - Quickly create a new session. Rename to playground context name
+   • On each window, show list of process associated with the window along with cpu, mem, net usage
 
 → Vim
 
@@ -72,6 +73,7 @@ ToDo Shortkeys and scripts for more productivity
    • Quick hide/show line numbers
    • Leader key. Change delay time. Add some confirm key like Enter to complete command
    • Learn everything regarding code folding
+   • Quick replace given word with another
 
 → Tmuxninator Projects
 

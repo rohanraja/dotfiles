@@ -49,7 +49,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git pip brew tmuxinator npm)
 
 # User configuration
 
@@ -101,9 +101,30 @@ done
 stty -ixon
 
 alias c='clear'
+alias s='sudo'
+alias h='history | ag'
+alias p='ps aux | ag'
+alias lk="ll -S | less"
+alias bi='brew install'
+alias pi='sudo pip install'
+
+# Shortcuts to common directories
+
+alias youvideos='cd /Volumes/BackSSD/Users/rohanraja/you_downloads/youvideos'
+
 
 alias algohttp_8118='ssh -L 8118:localhost:8118 root@www.algomuse.com:443'
 alias algosocks_2222='ssh -L 2222:localhost:22 root@www.algomuse.com:443'
 alias pnbrowse='open -n -a /Applications/Google\ Chrome.app --args --proxy-server=http://localhost:8118 --proxy-bypass-list="localhost" --profile-directory="pndl"'
 alias urlsadds='python ~/scripts/tmp/UrlExtract.py'
+alias youdl='curl --noproxy localhost http://localhost:3009/newlink'
 
+export http_proxy="http://10.3.100.207:8080"
+export https_proxy="https://10.3.100.207:8080"
+
+
+
+export CAFFE_ROOT='/Users/rohanraja/playground/thingscoop/caffe/'
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+export GOPATH=~/code/go/lang
+alias ccat='pygmentize -g'
