@@ -1,0 +1,58 @@
+pane	configs	1	:.vimrc	0	:#-	0	:/Users/rohanraja/dotfiles	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim /usr/local/etc/nginx/nginx.conf
+pane	configs	2	:vimrc	1	:*	0	:/Users/rohanraja/dotfiles	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim /Users/rohanraja/.vimrc
+pane	configs	3	:bash	0	:#	0	:/Users/rohanraja/dotfiles	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim /Users/rohanraja/.tmux.conf
+pane	configs	4	:zshrc	0	:#	0	:/Users/rohanraja/dotfiles	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim /Users/rohanraja/.zshrc
+pane	configs	5	:git	0	:#	0	:/Users/rohanraja/dotfiles	1	zsh	:
+pane	cs244	1	:edit	1	:*	0	:/Users/rohanraja/code/cs244/others_work/cs224d-hw1	1	zsh	:
+pane	cs244	1	:edit	1	:*	1	:/Users/rohanraja/code/cs244/others_work/cs224d-hw1	0	Python	:/usr/bin/python /usr/local/bin/ipython notebook
+pane	mltut	1	:editor	1	:*	0	:/Users/rohanraja/Documents/tornadao_projects/mlTut	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim .
+pane	mltut	2	:server	0	: 	0	:/Users/rohanraja/Documents/tornadao_projects/mlTut	1	Python	:python main.py
+pane	mltut	3	:notes	0	: 	0	:/Users/rohanraja/Documents/tornadao_projects/mlTut	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim -c :Note mltut
+pane	mltut	4	:bash	0	:#-	0	:/Users/rohanraja/Documents/tornadao_projects/mlTut	1	zsh	:
+pane	nnetgo	1	:bash	1	:*	0	:/Users/rohanraja/code/go/lang/src/github.com/rohanraja/nnet	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim nn_base.go
+pane	nnetgo	1	:bash	1	:*	1	:/Users/rohanraja/code/go/lang/src/github.com/rohanraja/nnet	0	zsh	:
+pane	nnetgo	2	:w2v	0	:#	0	:/Users/rohanraja/code/go/lang/src/github.com/rohanraja/nnet/word2vec	1	zsh	:
+pane	nnetgo	2	:w2v	0	:#	1	:/Users/rohanraja/code/go/lang/src/github.com/rohanraja/nnet/word2vec	0	zsh	:
+pane	nnetgo	3	:editor	0	:#	0	:/Users/rohanraja/code/go/lang/src/github.com/rohanraja/npimport	1	zsh	:
+pane	nnetgo	4	:softreg	0	:-	0	:/Users/rohanraja/code/go/lang/src/github.com/rohanraja/nnet/softreg	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim
+pane	notes	1	:Dev Todo	1	:*	0	:/Users/rohanraja/dotfiles/vim/bundle/vim-notes/misc/notes/user	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim -c :Note todo
+pane	notes	2	:Tasks	0	:#	0	:/Users/rohanraja/dotfiles/vim/bundle/vim-notes/misc/notes/user	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim -c :Note tasks
+pane	notes	3	:Reminders	0	: 	0	:/Users/rohanraja/dotfiles/vim/bundle/vim-notes/misc/notes/user	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim -c :Note reminders
+pane	notes	4	:bash	0	:#-	0	:/Users/rohanraja/dotfiles/vim/bundle/vim-notes/misc/notes/user	1	zsh	:
+pane	playground	1	:contentscript.js	1	:*	0	:/Users/rohanraja/playground/tmp	1	zsh	:
+pane	youDL	1	:vim	1	:*	0	:/Users/rohanraja/Documents/tornadao_projects/youdl	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim
+pane	youDL	2	:server	0	:#	0	:/Users/rohanraja/Documents/tornadao_projects/youdl	1	pypy	:pypy main.py
+pane	youDL	3	:supervisor	0	: 	0	:/Users/rohanraja/Documents/tornadao_projects/youdl	1	Python	:/usr/local/Cellar/python/2.7.9/Frameworks/Python.framework/Versions/2.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/supervisord -n -c daemons/supervisor/supervisord.conf
+pane	youDL	4	:bash	0	:#-	0	:/Users/rohanraja/Documents/tornadao_projects/youdl	1	zsh	:
+pane	youDL	5	:.	0	: 	0	:/Users/rohanraja/Documents/tornadao_projects/youdl	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim /Users/rohanraja/Documents/youtube_extension/contentscript.js
+pane	youmongo	1	:editor	1	:*	0	:/Users/rohanraja/Documents/rails_projects/youmongo	1	Vim	:/usr/local/Cellar/macvim/7.4-73_1/MacVim.app/Contents/MacOS/Vim
+pane	youmongo	2	:server	0	:#-	0	:/Users/rohanraja/Documents/rails_projects/youmongo	1	ruby	:/Users/rohanraja/.rvm/rubies/ruby-2.1.4/bin/ruby bin/rails s
+pane	youmongo	3	:console	0	: 	0	:/Users/rohanraja/Documents/rails_projects/youmongo	1	zsh	:
+window	configs	1	0	:#-	c09d,284x73,0,0,0
+window	configs	2	1	:*	c09e,284x73,0,0,1
+window	configs	3	0	:#	c09f,284x73,0,0,2
+window	configs	4	0	:#	c0a0,284x73,0,0,3
+window	configs	5	0	:#	c0a1,284x73,0,0,4
+window	cs244	1	1	:*	b42c,146x38,0,0{94x38,0,0,21,51x38,95,0,54}
+window	mltut	1	1	:*	cc83,146x38,0,0,6
+window	mltut	2	0	: 	cc84,146x38,0,0,7
+window	mltut	3	0	: 	cc85,146x38,0,0,8
+window	mltut	4	0	:#-	e673,146x38,0,0,24
+window	nnetgo	1	1	:*	9244,159x40,0,0{123x40,0,0,28,35x40,124,0,31}
+window	nnetgo	2	0	:#	05a2,159x40,0,0{120x40,0,0,29,38x40,121,0,59}
+window	nnetgo	3	0	:#	5850,159x40,0,0,30
+window	nnetgo	4	0	:-	d853,159x40,0,0,62
+window	notes	1	1	:*	cc86,146x38,0,0,9
+window	notes	2	0	:#	666f,146x38,0,0,10
+window	notes	3	0	: 	6670,146x38,0,0,11
+window	notes	4	0	:#-	e676,146x38,0,0,27
+window	playground	1	1	:*	6676,146x38,0,0,17
+window	youDL	1	1	:*	6671,146x38,0,0,12
+window	youDL	2	0	:#	6672,146x38,0,0,13
+window	youDL	3	0	: 	6673,146x38,0,0,14
+window	youDL	4	0	:#-	6674,146x38,0,0,15
+window	youDL	5	0	: 	6675,146x38,0,0,16
+window	youmongo	1	1	:*	6677,146x38,0,0,18
+window	youmongo	2	0	:#-	6678,146x38,0,0,19
+window	youmongo	3	0	: 	e66f,146x38,0,0,20
+state	configs	

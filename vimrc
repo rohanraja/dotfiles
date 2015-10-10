@@ -45,8 +45,14 @@ Plugin 'davidhalter/jedi-vim'
 " Plugin 'kshenoy/vim-signature'
 Plugin 'kien/ctrlp.vim'
 " Plugin 'Valloric/YouCompleteMe'
-Plugin 'sirver/ultisnips'
+
+" Plugin 'sirver/ultisnips'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
+
+
 Plugin 'rking/ag.vim'
 Plugin 'xolox/vim-notes'
 Plugin 'xolox/vim-misc'
@@ -71,6 +77,10 @@ Plugin 'jgdavey/tslime.vim'
 Plugin 'tpope/vim-dispatch'
 Plugin 'itchyny/calendar.vim'
 Plugin 'fatih/vim-go'
+Plugin 'majutsushi/tagbar'
+
+Plugin 'mattn/emmet-vim'
+
 "Plugin 'bling/vim-airline'
 " Plugin 'rkulla/pydiction'
 
@@ -127,8 +137,8 @@ let g:UltiSnipsExpandTrigger = '<C-z>'   " terminals send C-@ when C-Space is pr
 let g:UltiSnipsJumpForwardTrigger = '<C-l>' " some key I do not use at all
 
 let g:UltiSnipsEditSplit="vertical"
-let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
-let g:UltiSnipsSnippetDirectories  = ["UltiSnips"]
+" let g:UltiSnipsSnippetsDir="~/.vim/UltiSnips"
+" let g:UltiSnipsSnippetDirectories  = ["UltiSnips"]
 
 function! g:UltiSnips_Complete()
     call UltiSnips#ExpandSnippet()
@@ -141,7 +151,7 @@ function! g:UltiSnips_Complete()
     return ""
 endfunction
 
-au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+" au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 
 nnoremap zz zt
 
@@ -186,7 +196,7 @@ set nocursorline
 
 set cf  " Enable error files & error jumping.
 set clipboard+=unnamed  " Yanks go on clipboard instead.
-set timeoutlen=500
+set timeoutlen=200
 
 set showmatch  " Show matching brackets.
 set mat=5  " Bracket blinking.
@@ -199,16 +209,22 @@ set tags=./tags;
 let g:ycm_collect_identifiers_from_tags_files = 1
 
 " Show file name as the window title in tmux
-autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
-autocmd VimLeave * call system("tmux rename-window bash")
+" autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
+" autocmd VimLeave * call system("tmux rename-window bash")
 
 " Move lines up and down easily
-map <S-k> :m -2<CR>
-map <S-j> :m +1<CR>
+"map KK :m -2<CR>
+"map JJ :m +1<CR>
+nnoremap JJ :m .+1<CR>==
+nnoremap KK :m .-2<CR>==
+inoremap JJ <Esc>:m .+1<CR>==gi
+inoremap KK <Esc>:m .-2<CR>==gi
+vnoremap JJ :m '>+1<CR>gv=gv
+vnoremap KK :m '<-2<CR>gv=gv
 
 " Page up and down with SHIFT+Arrow keys
-map <S-Up> <PageUp>
-map <S-Down> <PageDown>
+map <S-Up> <C-u>
+map <S-Down> <C-d>
 
 map <leader>rak :Rake<CR>
 
@@ -227,7 +243,8 @@ function! InsertTabWrapper()
     if !col || getline('.')[col - 1] !~ '\k'
         return "\<tab>"
     else
-        return "\<c-n>"
+        " return "\<c-x>\<c-o>"
+        return "\<c-p>"
     endif
 endfunction
 inoremap <expr> <tab> InsertTabWrapper()
@@ -254,13 +271,14 @@ command! -nargs=1 Silent
 \ | execute ':redraw!'
 
 " Reload in chrome
-map <leader>l :w<cr> :Silent open /Applications/Google\ Chrome.app/<cr>:Silent chrome-cli reload<cr> 
+map <leader>l :w<cr> :Silent chrome-cli reload<cr> 
+" map <leader>l :w<cr> :Silent open /Applications/Google\ Chrome.app/<cr>:Silent chrome-cli reload<cr> 
 
 cabbr <expr> %% expand('%:p:h')
 
 " Increment/Decrement digit under the cursor
-noremap <Leader>inc a <ESC>h<C-a>lxh
-noremap <Leader>dec a <ESC>h<C-x>lxh
+noremap <Leader>i a <ESC>h<C-a>lxh
+noremap <Leader>de a <ESC>h<C-x>lxh
 nnoremap <C-y> :CtrlPTag<cr>
 
 " Goto tag and bring cursor to the top of the screen
@@ -311,7 +329,7 @@ map N Nzz
 
 
 " Rails test 
-map <Leader>t :call RunCurrentSpecFile()<CR>
+au FileType rb map <Leader>t :call RunCurrentSpecFile()<CR>
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 
 " Run last command in a Tmux pane - Good for testing 
@@ -321,5 +339,41 @@ map <Leader>tt :call Send_to_Tmux("!!\n\n")<CR>
 nnoremap ; :
 
 au BufRead,BufNewFile *.go setlocal filetype=go
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go map <leader>t :GoTest<CR>
+au FileType go nmap <leader>c <Plug>(go-coverage)
 
+au FileType go nmap <Leader>d <Plug>(go-def-vertical)
+au FileType go nmap <Leader>i <Plug>(go-info)
+au FileType go nmap <Leader>e <Plug>(go-rename)
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+let g:go_fmt_command = "goimports"
+au FileType go map <Leader>tt :call Send_to_Tmux("c\ngo test\n")<CR>
+
+" TagBar Plugin Toggle
+map <Leader>tb :TagbarToggle<CR>
+
+
+"Cursor Line Settings
+hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE
+"guibg=darkred guifg=white
+set cursorline
+
+" Select All
+map VV gg0vG$
+
+
+:imap <C-b> <Plug>snipMateTrigger
+
+" Ctags 
+noremap <Leader>ct :!ctags -R .<CR>
+
+let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
+map <Leader>de Oimport pdb; pdb.set_trace()jk
 
