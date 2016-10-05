@@ -5,6 +5,7 @@ sudo apt-get install -y \
   zsh \
   curl \
   wget \
+  python-pip \
   silversearcher-ag \
   htop \
   nmap \
@@ -18,5 +19,8 @@ cd ~
 git clone https://github.com/rohanraja/dotfiles.git
 cd dotfiles
 sh ./install.sh
+
+
+setxkbmap -layout us -option ctrl:nocaps
 
 vim -c "VundleInstall"
