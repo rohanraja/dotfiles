@@ -124,8 +124,8 @@ alias pnbrowse='open -n -a /Applications/Google\ Chrome.app --args --proxy-serve
 alias urlsadds='python ~/scripts/tmp/UrlExtract.py'
 alias youdl='curl --noproxy localhost http://localhost:3009/newlink'
 
-export http_proxy="http://10.3.100.207:8080"
-export https_proxy="https://10.3.100.207:8080"
+export http_proxy=
+export https_proxy=
 
 
 
@@ -139,3 +139,4 @@ source ~/.zsh/functions/tmux_pane_words.zsh
 
 # Tmux Vim color fix _TO_CHECK
 export TERM="xterm-256color"
+setxkbmap -layout us -option ctrl:nocaps
