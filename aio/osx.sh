@@ -4,26 +4,8 @@
 
 brew install caskroom/cask/brew-cask
 
-brew cask install \
-  google-chrome \
-  iterm2 \
-  dropbox \
-  alarm-clock \
-  omnidisksweeper \
-  smcfancontrol \
-  freefilesync \
-
-brew install \
-  homebrew/fuse/ntfs-3g \
-  tmux \
-  vim --with-python3 \
-  git \
-  zsh \
-  curl \
-  wget \
-  htop \
-  nmap \
-
+brew install $(cat packages.txt)
+brew cask install $(cat caskpackages.txt)
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
