@@ -37,6 +37,9 @@ call vundle#begin()
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'mxw/vim-jsx'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
@@ -195,7 +198,7 @@ set nocursorline
 " set grepprg=ack
 
 set cf  " Enable error files & error jumping.
-set clipboard+=unnamed  " Yanks go on clipboard instead.
+" set clipboard+=unnamed  " Yanks go on clipboard instead.
 set timeoutlen=200
 
 set showmatch  " Show matching brackets.
@@ -333,7 +336,7 @@ au FileType rb map <Leader>t :call RunCurrentSpecFile()<CR>
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 
 " Run last command in a Tmux pane - Good for testing 
-map <Leader>tt :call Send_to_Tmux("!!\n\n")<CR>
+map <Leader>tt :w<CR> :call Send_to_Tmux("!!\n\n")<CR>
 
 " Quick go to command mode
 nnoremap ; :
@@ -375,5 +378,5 @@ noremap <Leader>ct :!ctags -R .<CR>
 
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
-map <Leader>de Oimport pdb; pdb.set_trace()jk
+map <Leader>de Oimport ipdb; ipdb.set_trace()jk
 
