@@ -6,8 +6,12 @@ alias h='history | ag'
 alias p='ps aux | ag'
 alias prt="lsof -i"
 alias lk="ll -S | less"
+alias kl="ll -t | less"
 alias pi='pip install'
+alias ni='npm install --save'
 alias in='ipython notebook'
+
+
 
 # OSX Shortcuts
 alias bi='brew install'
@@ -33,3 +37,20 @@ alias gopath='cd /Users/rohanraja/code/go/lang/src/github.com/rohanraja/'
 alias pnbrowse='open -n -a /Applications/Google\ Chrome.app --args --proxy-server=http://localhost:8118 --proxy-bypass-list="localhost" --profile-directory="pndl"'
 alias urlsadds='python ~/scripts/tmp/UrlExtract.py'
 alias youvideos='cd /Volumes/BackSSD/Users/rohanraja/you_downloads/youvideos'
+alias pndl='/Volumes/Fireice/Users/rohanraja/Downloads/pndls'
+
+alias xlrn="mux stop xlearn2; mux xlearn2"
+
+
+function dockrun()
+{
+ docker run -it $1 /bin/sh
+}
+
+source ~/.zsh/tmuxinator.zsh
+
+# Rails
+alias cucu='bundle exec cucumber'
+alias cuc='bundle exec cucumber ${FEAT}'
+alias dbmig='bundle exec rake db:migrate; bundle exec rake db:migrate RAILS_ENV=test'
+alias dbreset='bundle exec rake db:reset; bundle exec rake db:reset RAILS_ENV=test'

@@ -1,0 +1,9 @@
+# ~/.tmuxinator/selfdriv1.yml
+
+name: selfdriv1
+root: ~/code/udacitysdc/pro1/CarND-LaneLines-P1
+
+windows:
+  - main: git status
+  - notebook: jupyter notebook
+  - vim: vim

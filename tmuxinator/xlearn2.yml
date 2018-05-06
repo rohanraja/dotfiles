@@ -1,0 +1,28 @@
+# ~/.tmuxinator/xlearn2.yml
+
+name: xlearn2
+root: ~/code/xlearn2
+
+startup_window: componentloader
+
+windows:
+  - main:
+  - datapoint:
+      layout: main-horizontal
+      panes:
+          - vim -O dbmodels.py datapoint.py -c "sp tests/test_datapoint.py"
+          - cd tests; py.test -s test_datapoint.py
+
+  - componentloader:
+      layout: main-horizontal
+      panes:
+          - vim -O componentloader.py tests/test_componentloader.py
+          - cd tests; py.test -s test_componentloader.py
+  - testdata: vim -O tests/testdata/mnist_dataset.py tests/testdata/mnist_model.py
+
+  - modelTrainer:
+      layout: main-horizontal
+      panes:
+          - vim -O modeltrainer.py.py tests/test_modeltrainer.py
+          - cd tests; py.test -s test_modeltrainer.py
+
