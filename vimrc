@@ -37,6 +37,14 @@ call vundle#begin()
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+
+"
+" Plugin 'LucHermitte/lh-vim-lib'
+" Plugin 'LucHermitte/lh-tags'
+" Plugin 'LucHermitte/lh-dev'
+" Plugin 'LucHermitte/lh-brackets'
+" Plugin 'LucHermitte/vim-refactor'
+
 Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mxw/vim-jsx'
@@ -434,3 +442,24 @@ endfunction
 let b:ale_warn_about_trailing_whitespace = 0
 let g:ale_sign_warning = '--'
 highlight clear ALEWarningSign
+
+au BufRead,BufNewFile *.thor set filetype=ruby
+
+
+vmap \em :call ExtractMethod()<CR>
+function! ExtractMethod() range
+  let name = inputdialog("Name of new method:")
+  '<
+  exe "normal! O\<BS>private " . name ."()\<CR>{\<Esc>"
+  '>
+  exe "normal! oreturn ;\<CR>}\<Esc>k"
+  s/return/\/\/ return/ge
+  normal! j%
+  normal! kf(
+  exe "normal! yyPi// = \<Esc>wdwA;\<Esc>"
+  normal! ==
+  normal! j0w
+endfunction
+
+command! -range -nargs=0 -bar JsonTool <line1>,<line2>!python -m json.tool
+

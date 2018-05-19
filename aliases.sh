@@ -47,10 +47,16 @@ function dockrun()
  docker run -it $1 /bin/sh
 }
 
+function singLn()
+{
+  perl -pe 's/\n/ \\n/ unless eof' $1 | pbcopy
+}
+
 source ~/.zsh/tmuxinator.zsh
 
 # Rails
 alias cucu='bundle exec cucumber'
 alias cuc='bundle exec cucumber ${FEAT}'
 alias dbmig='bundle exec rake db:migrate; bundle exec rake db:migrate RAILS_ENV=test'
-alias dbreset='bundle exec rake db:reset; bundle exec rake db:reset RAILS_ENV=test'
+alias dbreset='bundle exec rake db:reset; bundle exec rake db:reset RAILS_ENV=test; bundle exec rake restart'
+alias resq='bundle exec rake environment resque:work QUEUE=CODE_RUN_EVENTS'

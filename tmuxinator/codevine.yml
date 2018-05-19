@@ -1,0 +1,28 @@
+# ~/.tmuxinator/codevine.yml
+
+name: codevine
+root: ~/code/codevine-server
+
+windows:
+  - editor:
+      layout: main-horizontal
+      panes:
+        - vim
+        - gst
+  - server:
+      layout: main-horizontal
+      panes:
+        - bundle exec rails s
+        - resq
+  - specs: rspec spec/jobs
+  - parser:
+      root: ~/code/codevine_parser/CodeVine_Parser
+      panes:
+        - cd CodeVine_Parser; dotnet build
+        - cd TestCSharpProject; dotnet build
+  - webserver:
+      root: ~/code/tuts/storybook/my-app/
+      panes:
+        - nocorrect npm run storybook
+        - PORT=3002 npm start
+
