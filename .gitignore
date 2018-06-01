@@ -1,4 +1,5 @@
 /vim/bundle/*
 !/vim/bundle/vim-notes/misc/notes
 *.swp
+tags
 vim/plugin/vim-plugin-starter-kit/
