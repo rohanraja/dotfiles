@@ -8,5 +8,10 @@ htop
 nmap 
 the_silver_searcher
 ffmpeg
+peco
+fasd
+tig
+ranger
+ncdu
 
 
