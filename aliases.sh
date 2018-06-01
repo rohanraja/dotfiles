@@ -4,6 +4,7 @@ alias c='clear'
 alias s='sudo'
 alias h='history | ag'
 alias p='ps aux | ag'
+alias f='find . | ag'
 alias prt="lsof -i"
 alias lk="ll -S | less"
 alias kl="ll -t | less"
@@ -60,3 +61,6 @@ alias cuc='bundle exec cucumber ${FEAT}'
 alias dbmig='bundle exec rake db:migrate; bundle exec rake db:migrate RAILS_ENV=test'
 alias dbreset='bundle exec rake db:reset; bundle exec rake db:reset RAILS_ENV=test; bundle exec rake restart'
 alias resq='bundle exec rake environment resque:work QUEUE=CODE_RUN_EVENTS'
+
+# Dot net
+alias dr='dotnet run'

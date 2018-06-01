@@ -56,6 +56,7 @@ npm
 zsh-syntax-highlighting
 zsh-autosuggestions
 history-substring-search
+z
 )
 
 source $ZSH/oh-my-zsh.sh
