@@ -1,0 +1,13 @@
+# ~/.tmuxinator/xlearn-ui.yml
+
+name: xlearn-ui
+root: ~/code/xlearn-ui
+
+windows:
+  - main: git status
+  - server: yarn start
+  - expList:
+      layout: main-horizontal
+      panes:
+          - vim -O src/ExperimentExplorer.js datapoint.py -c "vs src/ExperimentList.js"
+          - yarn test

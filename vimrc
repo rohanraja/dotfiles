@@ -37,20 +37,37 @@ call vundle#begin()
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+
+"
+" Plugin 'LucHermitte/lh-vim-lib'
+" Plugin 'LucHermitte/lh-tags'
+" Plugin 'LucHermitte/lh-dev'
+" Plugin 'LucHermitte/lh-brackets'
+" Plugin 'LucHermitte/vim-refactor'
+
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'mxw/vim-jsx'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'w0rp/ale'
+Plugin 'tpope/vim-cucumber'
 " Plugin 'kshenoy/vim-signature'
 Plugin 'kien/ctrlp.vim'
 " Plugin 'Valloric/YouCompleteMe'
 
-" Plugin 'sirver/ultisnips'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+" Plugin 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+
+Plugin 'epilande/vim-es2015-snippets'
+Plugin 'epilande/vim-react-snippets'
+" plugin 'valloric/youcompleteme'
 
 
 Plugin 'rking/ag.vim'
@@ -70,7 +87,7 @@ Plugin 'vim-scripts/project.tar.gz'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-endwise'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jgdavey/tslime.vim'
@@ -80,6 +97,7 @@ Plugin 'fatih/vim-go'
 Plugin 'majutsushi/tagbar'
 
 Plugin 'mattn/emmet-vim'
+Plugin 'skywind3000/asyncrun.vim'
 
 "Plugin 'bling/vim-airline'
 " Plugin 'rkulla/pydiction'
@@ -195,7 +213,7 @@ set nocursorline
 " set grepprg=ack
 
 set cf  " Enable error files & error jumping.
-set clipboard+=unnamed  " Yanks go on clipboard instead.
+" set clipboard+=unnamed  " Yanks go on clipboard instead.
 set timeoutlen=200
 
 set showmatch  " Show matching brackets.
@@ -333,7 +351,7 @@ au FileType rb map <Leader>t :call RunCurrentSpecFile()<CR>
 let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 
 " Run last command in a Tmux pane - Good for testing 
-map <Leader>tt :call Send_to_Tmux("!!\n\n")<CR>
+map <Leader>tt :w<CR> :call Send_to_Tmux("!!\n\n")<CR>
 
 " Quick go to command mode
 nnoremap ; :
@@ -353,19 +371,29 @@ let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
-au FileType go map <Leader>tt :call Send_to_Tmux("c\ngo test\n")<CR>
 
+" ##########################################################################################################################################################
+au FileType go map <Leader>tt :call Send_to_Tmux("c\ngo test\n")<CR>
+" ##########################################################################################################################################################
+
+" ##########################################################################################################################################################
 " TagBar Plugin Toggle
 map <Leader>tb :TagbarToggle<CR>
+" ##########################################################################################################################################################
 
 
+" ##########################################################################################################################################################
 "Cursor Line Settings
 hi CursorLine   cterm=NONE ctermbg=black ctermfg=NONE
 "guibg=darkred guifg=white
 set cursorline
+" ##########################################################################################################################################################
 
+
+" ##########################################################################################################################################################
 " Select All
 map VV gg0vG$
+" ##########################################################################################################################################################
 
 
 :imap <C-b> <Plug>snipMateTrigger
@@ -375,5 +403,63 @@ noremap <Leader>ct :!ctags -R .<CR>
 
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
-map <Leader>de Oimport pdb; pdb.set_trace()jk
+" ##########################################################################################################################################################
+
+map <Leader>de Oimport ipdb; ipdb.set_trace()jk
+
+nnoremap <Leader>rt :Pytest method<CR>
+nnoremap <Leader>rtt :Pytest class<CR>
+
+" ##########################################################################################################################################################
+
+" Quick run via <F5>
+nnoremap <Leader>rr :call <SID>compile_and_run()<CR>
+
+augroup SPACEVIM_ASYNCRUN
+    autocmd!
+    " Automatically open the quickfix window
+    autocmd User AsyncRunStart call asyncrun#quickfix_toggle(15, 1)
+augroup END
+
+function! s:compile_and_run()
+    exec 'w'
+    if &filetype == 'c'
+        exec "AsyncRun! gcc % -o %<; time ./%<"
+    elseif &filetype == 'cpp'
+       exec "AsyncRun! g++ -std=c++11 % -o %<; time ./%<"
+    elseif &filetype == 'java'
+       exec "AsyncRun! javac %; time java %<"
+    elseif &filetype == 'sh'
+       exec "AsyncRun! time bash %"
+    elseif &filetype == 'python'
+       exec "AsyncRun! time python %"
+    endif
+endfunction
+
+
+" ##########################################################################################################################################################
+
+let b:ale_warn_about_trailing_whitespace = 0
+let g:ale_sign_warning = '--'
+highlight clear ALEWarningSign
+
+au BufRead,BufNewFile *.thor set filetype=ruby
+
+
+vmap \em :call ExtractMethod()<CR>
+function! ExtractMethod() range
+  let name = inputdialog("Name of new method:")
+  '<
+  exe "normal! O\<BS>private " . name ."()\<CR>{\<Esc>"
+  '>
+  exe "normal! oreturn ;\<CR>}\<Esc>k"
+  s/return/\/\/ return/ge
+  normal! j%
+  normal! kf(
+  exe "normal! yyPi// = \<Esc>wdwA;\<Esc>"
+  normal! ==
+  normal! j0w
+endfunction
+
+command! -range -nargs=0 -bar JsonTool <line1>,<line2>!python -m json.tool
 

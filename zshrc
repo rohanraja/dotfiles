@@ -6,6 +6,7 @@
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
+#  ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,14 +50,19 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pip brew tmuxinator npm)
-
-# User configuration
-
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Users/rohanraja/.rvm/gems/ruby-2.1.4/bin:/Users/rohanraja/.rvm/gems/ruby-2.1.4@global/bin:/Users/rohanraja/.rvm/rubies/ruby-2.1.4/bin:/Users/rohanraja/.rvm/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+plugins=(git pip brew 
+tmuxinator 
+npm 
+zsh-syntax-highlighting
+zsh-autosuggestions
+history-substring-search
+z
+)
 
 source $ZSH/oh-my-zsh.sh
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -89,8 +95,6 @@ source $ZSH/oh-my-zsh.sh
 
 set -o vi
 # alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias res="source ~/.zshrc"
-alias servethis="python -c 'import SimpleHTTPServer; SimpleHTTPServer.test()'"
 
 for file in ~/.zsh/functions/*; do
     source "$file"
@@ -100,43 +104,16 @@ done
 # To enable Ctrl+s in vim for saving
 stty -ixon
 
-alias c='clear'
-alias s='sudo'
-alias h='history | ag'
-alias p='ps aux | ag'
-alias prt="lsof -i"
-alias lk="ll -S | less"
-alias bi='brew install'
-alias pi='sudo pip install'
-alias in='ipython notebook'
-
 # Shortcuts to common directories
 
-alias youvideos='cd /Volumes/BackSSD/Users/rohanraja/you_downloads/youvideos'
-alias gopath='cd /Users/rohanraja/code/go/lang/src/github.com/rohanraja/'
-
-
-alias algohttp_8118='ssh -L 8118:localhost:8118 root@www.algomuse.com:443'
-alias xeon_8000='ssh -L 8001:localhost:8000 rohanr@10.5.30.194'
-alias algosocks_2222='ssh -L 2222:localhost:22 root@www.algomuse.com:443'
-alias algoredis='ssh -R 6379:localhost:6379 root@www.algomuse.com:443'
-alias pnbrowse='open -n -a /Applications/Google\ Chrome.app --args --proxy-server=http://localhost:8118 --proxy-bypass-list="localhost" --profile-directory="pndl"'
-alias urlsadds='python ~/scripts/tmp/UrlExtract.py'
-alias youdl='curl --noproxy localhost http://localhost:3009/newlink'
-
-export http_proxy=
-export https_proxy=
-
-
-
-export CAFFE_ROOT='/Users/rohanraja/playground/thingscoop/caffe/'
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
-export GOPATH=~/code/go/lang
-alias ccat='pygmentize -g'
 export GOMAXPROCS=4
 
 source ~/.zsh/functions/tmux_pane_words.zsh
 
 # Tmux Vim color fix _TO_CHECK
 export TERM="xterm-256color"
-setxkbmap -layout us -option ctrl:nocaps
+# setxkbmap -layout us -option ctrl:nocaps
+
+source ~/dotfiles/envVars.sh
+source ~/dotfiles/aliases.sh
+

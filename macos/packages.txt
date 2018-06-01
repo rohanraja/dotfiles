@@ -1,0 +1,17 @@
+tmux 
+vim
+git 
+zsh 
+curl 
+wget 
+htop 
+nmap 
+the_silver_searcher
+ffmpeg
+peco
+fasd
+tig
+ranger
+ncdu
+
+
