@@ -1,0 +1,177 @@
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Rohan}{Raja}{ \urlstyle{same}\url{github.com/rohanraja} \\
+\href{mailto:rohanraja9@gmail.com}{rohanraja9@gmail.com} | +91-8348521824
+}
+
+\vspace{3mm}
+An inquisitive self learner, experienced in writing readable, testable and extensible production quality code. \\
+Have a passion for devising and implementing end to end software solutions for solving real world problems.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{IIT Kharagpur}
+\descript{Mathematics and Computing}
+\location{5 year Integrated MSc \\ Cum. GPA: 7.84/10}
+\sectionsep
+
+\subsection{Sawai Man Singh School}
+\location{Grad. 2011|  Jaipur, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Favourite:}
+C\# \textbullet{}   Python \textbullet{} Ruby \textbullet{} Go \\
+\location{Experience in:}
+C \textbullet{} C++ \textbullet{} Shell \textbullet{} Javascript \\
+\location{Frameworks}
+React\textbullet{} Rails \textbullet{} .NET \\ 
+\subsection{Tools and Utilities}
+Docker \\
+Draw.io \\
+Test Driven Development \\
+Software Design Patterns \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Object Oriented Programming \\
+Operating Systems \\
+Database Systems \\
+Artificial Intelligence \\
+Compiler Design \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+\textbullet{}\custombold{Gold Medal out of 10 IITs}, Inter-IIT Software Dev Competition \\
+\textbullet{}\custombold{Winner out of 20 teams}, Microsoft Code-Fun-Do Hackathon 2012 \\
+\textbullet{}\custombold{Captain}, Inter-hall Software Dev Competition, IIT Kgp, 2015,2016\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Tech Blog://  \href{http://algomuse.com}{\custombold{algomuse.com}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/rohanraja9}{\custombold{rohanraja9}} \\
+Github:// \href{https://github.com/rohanraja}{\custombold{rohanraja}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Microsoft}
+\descript{| Software Engineer }
+\location{July 2016 – Present | Hyderabad, India (2 years)}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item As member of a scrum following team, wrote \custombold{throughly reviewed, test-driven} code for bug fixes and new features
+\item Had \custombold{direct interaction} with my product's users based on which proposed and implemented new solutions which directly \custombold{helped several customers}.
+\item Investigated a legacy code base for \custombold{reliability/testability/extensibiltiy issues}. To resolve, planned and lead an effort to \custombold{refactor} code to \custombold{desgin patterns}.
+\item Took initiatives to identify team's internal \custombold{productivity issues} and came up with innovative \custombold{solutions and POCs} (like a new UI testing framework to \custombold{simplify and speed up} test case authoring)
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Dreamworks Animation}
+\descript{| Software Engineering Intern}
+\location{May 2015 – July 2015 | Bangalore, India (2 months) }
+\begin{tightemize}
+\item Fixed bugs, added features to an internal Angular/Python/MongoDB webapp. 
+\item Developed from scratch a Python/AngularJS web application being test driven. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Brigham Young University}
+\descript{| Research Assistant}
+\location{May 2014 – July 2014 | Provo, Utah, USA (2 months)}
+\begin{tightemize}
+\item Added new features to a Javascript front end app in ExtJS/OpenLayers.
+\item Refactored a C\# GUI app to an Object Oriented Design making the code DRYer.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Universiti Malaysia Sarawak}
+\descript{| Web Developer Intern}
+\location{June 2013 – July 2013 | Sarawak, Malaysia (1 month)}
+\begin{tightemize}
+\item Redesigned a web UI using Bootstrap and got positive feedback on its usability.
+\item Developed an api server in PHP/MySQL along with a user authetication service.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{}
+\descript{Codevines - Web Based Time Travel Debugger}
+\location{2018 - C\#, Rails, React, Redux}
+Developed to improve code ramp up process by enabling new developers to debug code for common user stories, all without setting up any dev environment. 
+\sectionsep
+
+\runsubsection{}
+\descript{Screenshot matching based UI Testing framework}
+\location{2017 - C\#, OpenCV, Python, Cucumber}
+Authored a Multi-OS, Redis based distributed computing library.
+\sectionsep
+
+\end{minipage} 
+\end{document}
