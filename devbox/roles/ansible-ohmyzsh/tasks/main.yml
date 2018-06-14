@@ -1,6 +1,6 @@
 ---
 - name: Installing Zsh and git
-  become: yes,
+  become: yes
   become_user: root
   apt: pkg=zsh,git state=latest
   register: installation
