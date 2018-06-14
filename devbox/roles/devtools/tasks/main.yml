@@ -38,5 +38,5 @@
     state: present
     insertafter: EOF
 
-- name: Install Vim plugins
-  command: vim +VundleInstall &
+# - name: Install Vim plugins
+#   command: vim +VundleInstall &
