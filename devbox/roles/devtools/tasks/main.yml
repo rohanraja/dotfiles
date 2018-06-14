@@ -1,0 +1,42 @@
+---
+
+- name: update apt
+  become: yes
+  apt: update_cache=yes
+
+- name: install some tools
+  become: yes
+  apt: pkg={{ item }} state=latest
+  with_items:
+    - zsh
+    - tmux
+    - ncdu
+    - tig
+    - ranger
+    - silversearcher-ag
+
+- name: Change default shell to ZSH
+  become: yes
+  become_user: root
+  command: usermod -s /usr/bin/zsh vagrant
+
+- lineinfile:
+    path: ~/.zshrc
+    line: "source ~/dotfiles/zshrc"
+    state: present
+    insertafter: EOF
+
+- lineinfile:
+    path: ~/.zshrc
+    line: "source ~/.bashrc"
+    state: present
+    insertafter: EOF
+
+- lineinfile:
+    path: ~/.zshrc
+    line: "source ~/.bash_profile"
+    state: present
+    insertafter: EOF
+
+- name: Install Vim plugins
+  command: vim +VundleInstall &

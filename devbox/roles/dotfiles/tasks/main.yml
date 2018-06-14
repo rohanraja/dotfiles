@@ -1,0 +1,13 @@
+---
+
+- name: "Clone DotFiles Repo"
+  git:
+    repo: "https://github.com/rohanraja/dotfiles"
+    dest: "~/dotfiles"
+    clone: yes
+    update: yes
+    force: yes
+    version: master
+
+- name: Execute dotfiles installation script
+  command: sh ~/dotfiles/install.sh
