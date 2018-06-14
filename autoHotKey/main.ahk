@@ -7,6 +7,8 @@
 !4::ToggleWinMinimize("win_4")
 !5::ToggleWinMinimize("win_5")
 !6::ToggleWinMinimize("win_6")
+!7::ToggleWinMinimize("win_7")
+!8::ToggleWinMinimize("win_8")
 
 
 !u::ToggleWinMinimize("Unified Service Desk")
