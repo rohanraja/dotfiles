@@ -5,11 +5,6 @@
   apt: pkg=zsh,git state=latest
   register: installation
 
-- name: Backing up existing ~/.zshrc
-  shell: if [ -f ~/.zshrc ]; then mv ~/.zshrc{,.orig}; fi
-  when: installation|success
-  sudo: no
-
 - name: Cloning  oh-my-zsh
   git:
     repo=https://github.com/robbyrussell/oh-my-zsh

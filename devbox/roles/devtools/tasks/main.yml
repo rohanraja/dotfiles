@@ -8,12 +8,13 @@
   become: yes
   apt: pkg={{ item }} state=latest
   with_items:
-    - zsh
+    - zsa
     - tmux
     - ncdu
     - tig
     - ranger
     - htop
+    - nmap
     - silversearcher-ag
 
 - name: Change default shell to ZSH

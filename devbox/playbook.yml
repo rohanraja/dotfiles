@@ -4,3 +4,7 @@
     - ansible-ohmyzsh
     - dotfiles
     - devtools
+    - { role: ansible-role-docker,
+      become: yes,
+      become_user: root
+      }
