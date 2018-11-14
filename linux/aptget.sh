@@ -9,8 +9,10 @@ sudo apt-get install -y \
   silversearcher-ag \
   htop \
   nmap \
+  tig \
+  vlc \
+  ranger \
   openssh-server \
-  nautilus-open-terminal \
 
 
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
