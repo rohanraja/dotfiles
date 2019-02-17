@@ -2,15 +2,12 @@ iterm2
 dropbox 
 google-chrome
 skype-for-business
-alarm-clock 
 apptivate   
 vlc
-bittorrent
 omnidisksweeper
 skype
 db-browser-for-sqlite
 smcfancontrol 
-karabiner 
 docker
 docker-toolbox
 menumeters   
