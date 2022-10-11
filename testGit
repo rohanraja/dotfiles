@@ -1,1 +1,651 @@
-<mxfile host="app.diagrams.net" modified="2022-10-11T17:09:23.170Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.4.0" etag="Iq6pRMQpGqQtk21f5lT0" type="github"><diagram id="K7qQWItI8hxq2Yo7oAbv">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-11T17:10:48.919Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="ZRlq9vkr-JszT6GpJ1NN" version="20.4.0" type="github">
+  <diagram id="K7qQWItI8hxq2Yo7oAbv" name="Page-1">
+    <mxGraphModel dx="1825" dy="1175" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-1" value="Todo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="Todo" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-2">
+          <mxCell style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;" vertex="1" parent="1">
+            <mxGeometry x="210" y="3554.165" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-3">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-2" target="3JO7IpIVpH0Mh9UfJIln-6">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-4" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-6" target="3JO7IpIVpH0Mh9UfJIln-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-6" target="3JO7IpIVpH0Mh9UfJIln-145">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Personal life" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-6">
+          <mxCell style="shape=tape;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+            <mxGeometry x="380" y="2786.6000000000004" width="120" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-7">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-6" target="3JO7IpIVpH0Mh9UfJIln-8">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Health" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-8">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="550" y="1811.5200000000004" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-9">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-8" target="3JO7IpIVpH0Mh9UfJIln-11">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-10" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-11" target="3JO7IpIVpH0Mh9UfJIln-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Physical" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-11">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="720" y="1669.0200000000004" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-12">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-11" target="3JO7IpIVpH0Mh9UfJIln-13">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Suppliments" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-13">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="890" y="1594.0200000000004" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-14">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-13" target="3JO7IpIVpH0Mh9UfJIln-15">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Take Vit D" tags="Urgent Default Habits" id="3JO7IpIVpH0Mh9UfJIln-15">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;strokeWidth=5;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="1060" y="1554.0200000000004" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-16">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-13" target="3JO7IpIVpH0Mh9UfJIln-17">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Take Vit B12" tags="Urgent Default Habits" id="3JO7IpIVpH0Mh9UfJIln-17">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;strokeWidth=5;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="1060" y="1654.0200000000004" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-18">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-8" target="3JO7IpIVpH0Mh9UfJIln-20">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-19" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-20" target="3JO7IpIVpH0Mh9UfJIln-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Mental" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-20">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="720" y="1954.0200000000004" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-21">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-20" target="3JO7IpIVpH0Mh9UfJIln-22">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Take a vacation" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-22">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="890" y="1864.0200000000004" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-23">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-20" target="3JO7IpIVpH0Mh9UfJIln-26">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-24" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-26" target="3JO7IpIVpH0Mh9UfJIln-136">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-25" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-26" target="3JO7IpIVpH0Mh9UfJIln-141">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Visit Jaipur" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-26">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="1940" y="1990.0000000000005" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-27">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-26" target="3JO7IpIVpH0Mh9UfJIln-28">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Book ticket to Jaipur" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-28">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;strokeWidth=5;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="1820" y="1689.0200000000004" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-29">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-6" target="3JO7IpIVpH0Mh9UfJIln-30">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Aesthetics" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-30">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+            <mxGeometry x="550" y="2164.5200000000004" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-31">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-30" target="3JO7IpIVpH0Mh9UfJIln-32">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Clothing" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-32">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+            <mxGeometry x="720" y="2164.5200000000004" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-33">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-32" target="3JO7IpIVpH0Mh9UfJIln-32">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-34">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-6" target="3JO7IpIVpH0Mh9UfJIln-35">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Living" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-35">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+            <mxGeometry x="550" y="2285.5200000000004" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-36">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-35" target="3JO7IpIVpH0Mh9UfJIln-37">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bedroom" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-37">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+            <mxGeometry x="720" y="2285.5200000000004" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-38">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-6" target="3JO7IpIVpH0Mh9UfJIln-39">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Assets" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-39">
+          <mxCell style="shape=tape;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+            <mxGeometry x="550" y="2726.4300000000007" width="120" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-40">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-39" target="3JO7IpIVpH0Mh9UfJIln-41">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Car" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-41">
+          <mxCell style="shape=mxgraph.signs.transportation.car_2;html=1;pointerEvents=1;fillColor=#e1d5e7;strokeColor=#9673a6;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontFamily=Helvetica;fontSize=12;" vertex="1" parent="1">
+            <mxGeometry x="720" y="2735.9300000000007" width="142.5" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-42">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-41" target="3JO7IpIVpH0Mh9UfJIln-43">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Food / Beverages" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-43">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+            <mxGeometry x="912.5" y="2424.9300000000007" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Purchases Default" id="3JO7IpIVpH0Mh9UfJIln-44">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-43" target="3JO7IpIVpH0Mh9UfJIln-45">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Buy Car Travel Mug" tags="Purchases Default" id="3JO7IpIVpH0Mh9UfJIln-45">
+          <mxCell style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#9673a6;shadow=0;dashed=0;shape=mxgraph.ios7.icons.shopping_cart;fontFamily=Helvetica;fontSize=12;fillColor=#e1d5e7;" vertex="1" parent="1">
+            <mxGeometry x="1100.205" y="2363.9300000000007" width="70.59" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-46">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-43" target="3JO7IpIVpH0Mh9UfJIln-47">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Tissu paper dispenser" tags="Purchases Default" id="3JO7IpIVpH0Mh9UfJIln-47">
+          <mxCell style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#9673a6;shadow=0;dashed=0;shape=mxgraph.ios7.icons.shopping_cart;fontFamily=Helvetica;fontSize=12;fillColor=#e1d5e7;" vertex="1" parent="1">
+            <mxGeometry x="1106.205" y="2484.9300000000007" width="70.59" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-48">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-41" target="3JO7IpIVpH0Mh9UfJIln-49">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Safety" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-49">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+            <mxGeometry x="912.5" y="2606.4300000000007" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-50">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-49" target="3JO7IpIVpH0Mh9UfJIln-51">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Jumper Cables" tags="Purchases Default" id="3JO7IpIVpH0Mh9UfJIln-51">
+          <mxCell style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#9673a6;shadow=0;dashed=0;shape=mxgraph.ios7.icons.shopping_cart;fontFamily=Helvetica;fontSize=12;fillColor=#e1d5e7;" vertex="1" parent="1">
+            <mxGeometry x="1087.705" y="2605.9300000000007" width="70.59" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-52">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-41" target="3JO7IpIVpH0Mh9UfJIln-53">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Space organization" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-53">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+            <mxGeometry x="912.5" y="2777.4300000000007" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-54">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-53" target="3JO7IpIVpH0Mh9UfJIln-55">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Car back seat container" tags="Purchases Default" id="3JO7IpIVpH0Mh9UfJIln-55">
+          <mxCell style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#9673a6;shadow=0;dashed=0;shape=mxgraph.ios7.icons.shopping_cart;fontFamily=Helvetica;fontSize=12;fillColor=#e1d5e7;" vertex="1" parent="1">
+            <mxGeometry x="1110.7049999999997" y="2726.9300000000007" width="70.59" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-56">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-53" target="3JO7IpIVpH0Mh9UfJIln-57">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Fix dashcam wire" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-57">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+            <mxGeometry x="1082.5" y="2847.9300000000007" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-58">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-41" target="3JO7IpIVpH0Mh9UfJIln-59">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Audio" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-59">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+            <mxGeometry x="912.5" y="2937.9300000000007" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-60">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-59" target="3JO7IpIVpH0Mh9UfJIln-61">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Fix Amplifier in boot" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-61">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+            <mxGeometry x="1082.5" y="2947.9300000000007" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-62">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-41" target="3JO7IpIVpH0Mh9UfJIln-63">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Get RC done" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-63">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#e51400;fontColor=#ffffff;strokeColor=#B20000;strokeWidth=5;fontStyle=1" vertex="1" parent="1">
+            <mxGeometry x="912.5" y="3057.9300000000007" width="150" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-64">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-6" target="3JO7IpIVpH0Mh9UfJIln-66">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-65" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-66" target="3JO7IpIVpH0Mh9UfJIln-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Time management" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-66">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="550" y="3369.6800000000007" width="150" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-67">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-66" target="3JO7IpIVpH0Mh9UfJIln-68">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Habits" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-68">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="750" y="3166.6800000000007" width="150" height="70" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-69">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-68" target="3JO7IpIVpH0Mh9UfJIln-70">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Find way to track and sustain habits" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-70">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#fa6800;strokeColor=#C73500;fontColor=#000000;strokeWidth=5;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="950" y="3171.6800000000007" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-71">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-66" target="3JO7IpIVpH0Mh9UfJIln-73">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-72" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#f5f5f5;strokeColor=#666666;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-73" target="3JO7IpIVpH0Mh9UfJIln-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Planning" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-73">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="750" y="3311.6800000000007" width="150" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-74">
+          <mxCell style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-2" target="3JO7IpIVpH0Mh9UfJIln-75">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Work" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-75">
+          <mxCell style="shape=tape;whiteSpace=wrap;html=1;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" vertex="1" parent="1">
+            <mxGeometry x="380" y="4301.73" width="120" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-76">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-75" target="3JO7IpIVpH0Mh9UfJIln-77">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Productivity Enhancement" tags="Default Purchases" id="3JO7IpIVpH0Mh9UfJIln-77">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+            <mxGeometry x="550" y="4081.88" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-78">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-77" target="3JO7IpIVpH0Mh9UfJIln-79">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Super365" tags="Default" link="https://www.draw.io/#G1bDqBZ1RgiT6hqBSTCrHlT8mYIz5Wz8mo" linkTarget="_blank" id="3JO7IpIVpH0Mh9UfJIln-79">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;fontStyle=1;strokeWidth=9;" vertex="1" parent="1">
+            <mxGeometry x="720" y="3901.6800000000003" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-80">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-77" target="3JO7IpIVpH0Mh9UfJIln-81">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Espanso" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-81">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+            <mxGeometry x="720" y="4021.6800000000003" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-82">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-77" target="3JO7IpIVpH0Mh9UfJIln-83">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="AHK Script" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-83">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+            <mxGeometry x="720" y="4141.68" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-84">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-77" target="3JO7IpIVpH0Mh9UfJIln-85">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Gear upgrades" tags="Default Purchases" id="3JO7IpIVpH0Mh9UfJIln-85">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+            <mxGeometry x="720" y="4262.08" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-86">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#1ba1e2;strokeColor=#006EAF;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-85" target="3JO7IpIVpH0Mh9UfJIln-87">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Buy Corsair keyboard with macro buttons" tags="Purchases Default" id="3JO7IpIVpH0Mh9UfJIln-87">
+          <mxCell style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#9673a6;shadow=0;dashed=0;shape=mxgraph.ios7.icons.shopping_cart;fontFamily=Helvetica;fontSize=12;fillColor=#e1d5e7;" vertex="1" parent="1">
+            <mxGeometry x="964.2049999999997" y="4261.58" width="70.59" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-88">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-75" target="3JO7IpIVpH0Mh9UfJIln-90">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-89" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-90" target="3JO7IpIVpH0Mh9UfJIln-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Microsoft" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-90">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="1">
+            <mxGeometry x="550" y="4541.579999999999" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-91">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#a20025;strokeColor=#6F0000;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-90" target="3JO7IpIVpH0Mh9UfJIln-92">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Work at office" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-92">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="1">
+            <mxGeometry x="720" y="4443.579999999999" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-93">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#a20025;strokeColor=#6F0000;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-92" target="3JO7IpIVpH0Mh9UfJIln-94">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Travel mug for office tea" tags="Purchases Default" id="3JO7IpIVpH0Mh9UfJIln-94">
+          <mxCell style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#BD7000;shadow=0;dashed=0;shape=mxgraph.ios7.icons.shopping_cart;fontFamily=Helvetica;fontSize=12;fontColor=#000000;fillColor=#f0a30a;fontStyle=1" vertex="1" parent="1">
+            <mxGeometry x="924.2049999999997" y="4382.58" width="70.59" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-95">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#a20025;strokeColor=#6F0000;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-92" target="3JO7IpIVpH0Mh9UfJIln-96">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Bagpack with smart compartments" tags="Purchases Default" id="3JO7IpIVpH0Mh9UfJIln-96">
+          <mxCell style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#9673a6;shadow=0;dashed=0;shape=mxgraph.ios7.icons.shopping_cart;fontFamily=Helvetica;fontSize=12;fillColor=#e1d5e7;fontColor=default;" vertex="1" parent="1">
+            <mxGeometry x="946.7049999999997" y="4503.579999999999" width="70.59" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-97">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#a20025;strokeColor=#6F0000;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-90" target="3JO7IpIVpH0Mh9UfJIln-99">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-98" value="" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-99" target="3JO7IpIVpH0Mh9UfJIln-133">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Misc" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-99">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#a20025;strokeColor=#6F0000;fontColor=#ffffff;" vertex="1" parent="1">
+            <mxGeometry x="720" y="4639.579999999998" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-100">
+          <mxCell style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#a20025;strokeColor=#6F0000;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-99" target="3JO7IpIVpH0Mh9UfJIln-101">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Apply for leave for Oct 22" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-101">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;strokeWidth=5;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="972.5" y="4639.579999999998" width="230" height="110" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-102" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#008a00;strokeColor=#005700;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-103" target="3JO7IpIVpH0Mh9UfJIln-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Finance" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-103">
+          <mxCell style="shape=tape;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+            <mxGeometry x="550" y="3761.6800000000007" width="120" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-104" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#008a00;strokeColor=#005700;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-105" target="3JO7IpIVpH0Mh9UfJIln-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Credit Cards" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-105">
+          <mxCell style="shape=tape;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+            <mxGeometry x="720" y="3761.6800000000007" width="120" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-106" value="Pay credit card bills" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+          <mxGeometry x="890" y="3781.6800000000007" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-107" value="Get tasks from Notion into drawio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="1056.79" y="3280.000000000001" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-108" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-109" target="3JO7IpIVpH0Mh9UfJIln-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Tennis" tags="Default" id="3JO7IpIVpH0Mh9UfJIln-109">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="890" y="1744.0200000000004" width="120" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Book tennis court for tomorrow" tags="Habits" id="3JO7IpIVpH0Mh9UfJIln-110">
+          <mxCell style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=5;fontStyle=1;" vertex="1" parent="1">
+            <mxGeometry x="1060" y="1754.0200000000004" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-111" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-113" target="3JO7IpIVpH0Mh9UfJIln-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-112" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-113" target="3JO7IpIVpH0Mh9UfJIln-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Productivity improvement" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-113">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="750" y="3572.6800000000007" width="150" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-114" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-116" target="3JO7IpIVpH0Mh9UfJIln-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-115" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-116" target="3JO7IpIVpH0Mh9UfJIln-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Mind maps" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-116">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="950" y="3483.6800000000007" width="150" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-117" value="Create script to output list from drawio tree" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#BD7000;fontFamily=Helvetica;fontSize=12;fontColor=#000000;fillColor=#f0a30a;fontStyle=1;strokeWidth=9;" vertex="1" parent="1">
+          <mxGeometry x="1305" y="3250" width="370" height="213.68" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-118" value="Get Drawio working in iPhone" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#C73500;fontFamily=Helvetica;fontSize=12;fontColor=#000000;fillColor=#fa6800;strokeWidth=5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="3543.6800000000007" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-119" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-121" target="3JO7IpIVpH0Mh9UfJIln-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-120" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-121" target="3JO7IpIVpH0Mh9UfJIln-130">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Getting things done" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-121">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="950" y="3661.6800000000007" width="150" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-122" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-123" target="3JO7IpIVpH0Mh9UfJIln-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-123" value="Find way to pick tasks from mind maps" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;strokeWidth=1;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="3671.6800000000007" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-124" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-125" target="3JO7IpIVpH0Mh9UfJIln-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="&lt;span style=&quot;&quot;&gt;Using google calendar&lt;/span&gt;" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-125">
+          <mxCell style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontFamily=Helvetica;fontSize=12;fontColor=#333333;align=center;strokeColor=#666666;fillColor=#f5f5f5;" vertex="1" parent="1">
+            <mxGeometry x="1320" y="3661.6800000000007" width="150" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-126" value="Go through all urgent tasks in chart and add to google cal" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1520" y="3646.6800000000007" width="200" height="110" as="geometry" />
+        </mxCell>
+        <UserObject label="Meditate" tags="Habits" id="3JO7IpIVpH0Mh9UfJIln-127">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="890" y="2064.0200000000004" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-128" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-130" target="3JO7IpIVpH0Mh9UfJIln-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-129" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-130" target="3JO7IpIVpH0Mh9UfJIln-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-130" value="Write spec / guide on usage of todo mind maps" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1170.79" y="3790.000000000001" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-131" value="Have a way to quickly view purchases" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="3790" width="195" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-132" value="Have a way to glance at urgent tasks" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="3951.88" width="195" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-133" value="Apply for SET machine" style="whiteSpace=wrap;html=1;fillColor=#e51400;strokeColor=#B20000;fontColor=#ffffff;strokeWidth=5;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="972.5" y="4860" width="225.8" height="120" as="geometry" />
+        </mxCell>
+        <UserObject label="D365 Sales" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-134">
+          <mxCell style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#a20025;strokeColor=#7EA6E0;fontColor=#ffffff;strokeWidth=4;" vertex="1" parent="1">
+            <mxGeometry x="730" y="5140" width="200" height="80" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-135" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-136" target="3JO7IpIVpH0Mh9UfJIln-138">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-136" value="Prepare list of things to take home Jaipur" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="2290" y="1910" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-137" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-138" target="3JO7IpIVpH0Mh9UfJIln-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-138" value="Hobby / Side projects" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="1784.02" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-139" value="Raspberry Pi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="2975" y="1714.02" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-140" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-141" target="3JO7IpIVpH0Mh9UfJIln-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Things to do before leaving" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-141">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="2140" y="2200.0000000000005" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-142" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="3JO7IpIVpH0Mh9UfJIln-143" target="3JO7IpIVpH0Mh9UfJIln-144">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <UserObject label="Room" tags="Default Urgent" id="3JO7IpIVpH0Mh9UfJIln-143">
+          <mxCell style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+            <mxGeometry x="2420" y="2270.0000000000005" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="3JO7IpIVpH0Mh9UfJIln-144" value="Clear room dustbin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="2750" y="2210.0000000000005" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="Dating" tags="Default Urgent Purchases" id="3JO7IpIVpH0Mh9UfJIln-145">
+          <mxCell style="shape=tape;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+            <mxGeometry x="180" y="2786.6000000000004" width="120" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
