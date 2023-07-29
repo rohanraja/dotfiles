@@ -1,6 +1,5 @@
 sudo apt-get install -y \
   tmux \
-  vim-gnome \
   git \
   zsh \
   curl \

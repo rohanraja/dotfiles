@@ -1,0 +1,28 @@
+---
+- name: Update apt cache
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+- name: Install Common Linux Tools
+  hosts: localhost  # Replace with the target hosts or groups you want to install the tools on
+  become: true              # This playbook requires privilege escalation, so we set become to true
+
+  tasks:
+    - name: Install net-tools and other common tools
+      package:
+        name:
+          - net-tools       # Includes ifconfig and other networking tools
+          - curl            # Useful for transferring data with URLs
+          - wget            # Command-line utility for downloading files
+          - htop            # Interactive process viewer
+          - vim             # Text editor
+          - git             # Version control system
+          - zsh
+          - nmap
+          - ranger
+          - cbm             # Network speed monitor
+        state: present      # Ensure the packages are installed

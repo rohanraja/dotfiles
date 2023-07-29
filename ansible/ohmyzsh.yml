@@ -1,0 +1,5 @@
+- hosts: localhost
+  roles:
+    - role: gantsign.oh-my-zsh
+      users:
+        - username: rohan-linux
