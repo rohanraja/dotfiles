@@ -40,3 +40,20 @@ antibody bundle <~/.zsh_plugins.txt >~/.zsh_plugins.sh
 
 # Use kitty terminal on MacOS
 # [ $(uname -s) = 'Darwin' ] && stow kitty
+#
+
+###############################################################################
+# Install tpm (tmux plugin manager)
+###############################################################################
+
+rm -rf "${HOME}/.tmux/plugins/tpm"
+git clone --depth 1 https://github.com/tmux-plugins/tpm "${HOME}/.tmux/plugins/tpm"
+
+###############################################################################
+# Install tmux plugins
+###############################################################################
+
+printf "\n\nInstalling tmux plugins...\n"
+
+export TMUX_PLUGIN_MANAGER_PATH="${HOME}/.tmux/plugins"
+"${HOME}/.tmux/plugins/tpm/bin/install_plugins"
