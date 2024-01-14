@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Ask for the input
+read -s -p "Enter your string to encrypt: " password
+echo
+
+# Save output to clipboard, removing newline
+echo $password | openssl aes-256-cbc -a -salt -pbkdf2 -pass pass:$passKey | tr -d '\n' | pbcopy

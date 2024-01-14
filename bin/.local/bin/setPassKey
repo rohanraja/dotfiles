@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Ask for the password
+read -s -p "Enter your password: " password
+echo
+
+# Save the password to ~/.passKey
+echo "$password" > ~/.passKey
+
+echo "Password saved to ~/.passKey"

@@ -18,13 +18,15 @@ nix-env -iA \
 	nixpkgs.bat \
 	nixpkgs.gnumake \
 	nixpkgs.gcc \
+	nixpkgs.zoxide \
 	nixpkgs.direnv
 
 # stow dotfiles
-stow git
 stow nvim
+stow git
 stow tmux
 stow zsh
+stow bin
 
 # add zsh as a login shell
 command -v zsh | sudo tee -a /etc/shells
