@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+Args=""
+
+# Loop through all arguments
+while [[ "$#" -gt 0 ]]; do
+	key="$1"
+	value="$2"
+
+	case $key in
+	--*)
+		# Remove '--' from the key
+		key="${key#--}"
+
+		# Assign the value to the variable with the modified key
+		# declare "$key=$value"
+		replaceSpace=${value// /%20}
+		Args="$Args$key=$replaceSpace&"
+		# echo "Setting variable $key to $value"
+
+		shift 2
+		;;
+	*)
+		echo "Unknown option: $key" >&2
+		exit 1
+		;;
+	esac
+done
+
+echo $Args
+curl http://localhost:8005/run?$Args

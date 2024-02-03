@@ -1,0 +1,27 @@
+#!/bin/bash
+
+sessionName=$1
+windowName=$2
+command=$3
+existingcommand=$4
+
+# Check if a tmux session named "$sessionName" already exists
+if ! tmux has-session -t $sessionName 2>/dev/null; then
+	# If it doesn't exist, create a new session named "$sessionName", detached
+	tmux new-session -d -s $sessionName
+else
+	echo "Session already exists - $sessionName"
+fi
+
+# Check if a window named "$windowName" already exists in the "$sessionName" session
+if ! tmux list-windows -t $sessionName | grep -q $windowName; then
+	echo "Creating new window and running command - $command for window - $windowName in session - $sessionName"
+	# If it doesn't exist, create a new window named "$windowName" in the "$sessionName" session
+	tmux new-window -t $sessionName: -n $windowName
+
+	# Run the command "$command" in the "$windowName" window
+	tmux send-keys -t $sessionName:$windowName "$command" C-m
+else
+	echo "Window already exists - $windowName in session - $sessionName"
+	tmux send-keys -t $sessionName:$windowName "$existingcommand" Enter
+fi

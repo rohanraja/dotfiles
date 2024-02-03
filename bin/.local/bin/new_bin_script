@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+	echo "Please provide a name for the script"
+	exit 1
+fi
+
+# Touch a new file in ~/.local/bin
+
+touch ~/.local/bin/$1
+
+chmod +x ~/.local/bin/$1
+
+echo "#!/usr/bin/env bash" >>~/.local/bin/$1
+
+echo "" >>~/.local/bin/$1
+
+qedit ~/.local/bin/$1

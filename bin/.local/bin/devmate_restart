@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+
+sessionName="Devmate"
+windowName="server"
+
+tmux send-keys -t $sessionName:$windowName C-c
+
+# wait for 5 seconds
+sleep 5
+
+# kill all processes on port 9000
+kill -9 $(lsof -t -i:9000)
+
+tmux send-keys -t $sessionName:$windowName "npm run start" C-m

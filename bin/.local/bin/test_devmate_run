@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+#
+
+devmate_run \
+	--commandName "RunYamlFile" \
+	--FilePath "/tmp/test.yml"

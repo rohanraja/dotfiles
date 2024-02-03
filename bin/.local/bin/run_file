@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+file_path="$1"
+
+# if file_path is executable or bash file, then run it
+
+if [[ -x "$file_path" ]] || [[ $(file --mime-type -b "$file_path") == "text/x-shellscript" ]]; then
+	. "$file_path"
+fi
+
+# IF file path ends with .yml or .yaml, then run it
+
+if [[ "$file_path" == *.yml ]] || [[ "$file_path" == *.yaml ]]; then
+
+	devmate_run \
+		--commandName "RunYamlFile" \
+		--FilePath "$file_path"
+
+fi

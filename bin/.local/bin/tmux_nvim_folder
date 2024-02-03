@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+fPath=$1
+
+# Resolve the folder path
+folderPath=$(
+	cd $fPath
+	pwd
+)
+
+# If $2 exists, choose session name as $2, else choose folder name
+if [ -z "$2" ]; then
+	sessionName=$(basename $folderPath)
+else
+	sessionName=$2
+fi
+
+tmux_run_cmd $sessionName "nvim" "nvim $folderPath"
+
+tmux switch-client -t $sessionName:nvim

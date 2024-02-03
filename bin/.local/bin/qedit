@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+echo "Quick editing file - $1"
+
+tmux_run_cmd "today" "nvim" "nvim $1" ":e $1"
+
+open -a "kitty"
+
+# Switch to window with name "nvim" in session "today"
+#
+tmux switch-client -t today:nvim
