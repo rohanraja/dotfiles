@@ -21,6 +21,13 @@ nix-env -iA \
 	nixpkgs.zoxide \
 	nixpkgs.direnv
 
+# Install oh my zsh if zsh is not installed
+if [[ ! -d ~/.oh-my-zsh ]]; then
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	# Move .zshrc to .zshrc.local
+	mv ~/.zshrc ~/.zshrc.local
+fi
+
 # stow dotfiles
 stow nvim
 stow git
