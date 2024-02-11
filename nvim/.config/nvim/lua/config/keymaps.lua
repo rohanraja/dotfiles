@@ -132,3 +132,22 @@ end)
 vim.keymap.set("n", "<Leader><Right>", function()
   harpoon:list():next()
 end)
+
+-- Define a function to stage, amend commit, and push changes
+local function git_stage_commit_push()
+  -- Stage the current file
+  vim.cmd("!git add %")
+  -- Commit with amend. This will not prompt for a commit message edit.
+  -- Remove '--no-edit' if you want to edit the commit message.
+  vim.cmd("!git commit --amend --no-edit")
+  -- Push changes to the server with safety checks.
+  -- Adjust the branch and remote as necessary. Use --force-with-lease for safety.
+  vim.cmd("!git push")
+end
+
+-- Map <leader>ggg to the git_stage_commit_push function
+-- vim.api.nvim_set_keymap("n", "<leader>ggg", ":lua git_stage_commit_push()<CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<Leader>ga", function()
+  git_stage_commit_push()
+end)
