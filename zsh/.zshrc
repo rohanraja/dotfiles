@@ -99,6 +99,10 @@ bccc() {
         | xargs open
 }
 
-
-
 source ~/alias/git.sh
+source ~/alias/env_vars.sh
+
+fvim(){
+  nvim $(rg --files --hidden | fzf)
+}
+

@@ -24,6 +24,10 @@ vim.api.nvim_set_keymap("n", "<Leader>vs", "<Cmd>lua open_vscode()<CR>", { norem
 
 vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = true })
 
+-- When jkjk is pressed in insert mode, first bring to normal mode and then save the file
+vim.api.nvim_set_keymap("i", "kj", "<Esc>:w<CR>", { noremap = true })
+vim.api.nvim_set_keymap("n", "kj", "<Esc>:w<CR>", { noremap = true })
+
 require("oil").setup()
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })

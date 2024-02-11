@@ -2,3 +2,4 @@
 require("config.lazy")
 require("config.devmate_cmp")
 require("config.devmate_entityTypes")
+require("overseer").setup()

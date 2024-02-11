@@ -27,6 +27,7 @@ stow git
 stow tmux
 stow zsh
 stow bin
+stow scripts
 
 # add zsh as a login shell
 command -v zsh | sudo tee -a /etc/shells

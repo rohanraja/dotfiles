@@ -23,5 +23,16 @@ if ! tmux list-windows -t $sessionName | grep -q $windowName; then
 	tmux send-keys -t $sessionName:$windowName "$command" C-m
 else
 	echo "Window already exists - $windowName in session - $sessionName"
-	tmux send-keys -t $sessionName:$windowName "$existingcommand" Enter
+
+	# if existingcommand is empty, then run command
+	if [ -z "$existingcommand" ]; then
+		echo "Running command - $command for window - $windowName in session - $sessionName"
+		tmux send-keys -t $sessionName:$windowName "$command" C-m
+	else
+		echo "Running existing command - $existingcommand for window - $windowName in session - $sessionName"
+		tmux send-keys -t $sessionName:$windowName "$existingcommand" Enter
+	fi
+
+	# Activate the window in the session
+	tmux select-window -t $sessionName:$windowName
 fi

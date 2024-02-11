@@ -1,0 +1,33 @@
+#!/bin/bash
+
+# Function to get page size in bytes
+function get_page_size() {
+	echo $(sysctl -n hw.pagesize)
+}
+
+# Function to calculate memory usage in bytes
+function get_memory_usage() {
+	pages=$(vm_stat | grep "Pages active" | awk '{print $3}' | sed 's/\.//')
+	let bytes=pages*$(get_page_size)
+	echo $bytes
+}
+
+# Get initial memory usage in bytes
+initial_usage=$(get_memory_usage)
+
+# Function to print memory consumed since the script started in MB
+function print_memory_consumed() {
+	current_usage=$(get_memory_usage)
+	let consumed=current_usage-initial_usage
+	# Convert bytes to MB
+	let consumed_mb=consumed/1024/1024
+	echo "Memory consumed since script started: $consumed_mb MB"
+}
+
+echo "Monitoring memory consumption... Press Ctrl+C to stop."
+
+# Loop to check memory usage every second
+while true; do
+	print_memory_consumed
+	sleep 1
+done

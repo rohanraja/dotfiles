@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Script to search a directory with ripgrep, list results in fzf with file preview, and open in nvim
+
+# Ensure a search term is provided
+if [ $# -eq 0 ]; then
+	echo "Usage: $0 <search_term> [search_directory]"
+	exit 1
+fi
+
+SEARCH_TERM=$1
+SEARCH_DIR=${2:-.} # Use current directory if none provided
+
+# Perform the search with ripgrep and pipe results to fzf
+# --files-with-matches: Only show files that contain matches
+# --no-messages: Suppress error messages related to file reading/searching
+# Preview window customization can be adjusted as needed
+SELECTED_FILE=$(rg --files-with-matches --no-messages "$SEARCH_TERM" "$SEARCH_DIR" | fzf --preview 'bat --style=numbers --color=always {} | head -500')
+
+# Check if a file was selected (non-empty string)
+if [ -n "$SELECTED_FILE" ]; then
+	# Open the selected file in nvim
+	nvim "$SELECTED_FILE"
+else
+	echo "No file selected or found."
+fi
