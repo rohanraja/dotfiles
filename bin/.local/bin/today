@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Get the current date in the format YYYY_MM_DD
+current_date=$(date +"%Y_%m_%d")
+
+# Construct the file name for today's journal entry
+#
+file_name="${current_date}.md"
+
+file_path="$SECOND_BRAIN_PATH/journals/$file_name"
+
+# Check if the file exists
+# if [ -e "journals/$file_name" ]; then
+# Open the file with the default editor (change 'open' to your preferred editor command)
+qedit "$file_path" # On Linux, you might use 'xdg-open' instead of 'open'
+# else
+# 	echo "Journal entry for today not found."
+#
+# fi
+#

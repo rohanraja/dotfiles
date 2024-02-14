@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+curl "http://beast:4000/api/indexfiles"
+curl "http://rpi5:4000/api/indexfiles"

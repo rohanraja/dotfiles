@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+#
+
+echo "Booting"
+
+echo "Running devmate tmux for all projects"
+projectDirs=()
+while IFS= read -r line; do
+	projectDirs+=("$line")
+done <~/.local/projects.txt
+
+# For each project directory, run boot
+for dir in "${projectDirs[@]}"; do
+	if [ -f "$dir/devmate.yml" ]; then
+		echo "Running devmate project tmux on $dir"
+		cd "$dir"
+		run_project_tmux
+	fi
+done
+
+# if ~/.local/boot.sh exists then run it
+if [ -f ~/.local/boot.sh ]; then
+	echo "Running ~/.local/boot.sh"
+	~/.local/boot.sh
+fi
