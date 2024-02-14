@@ -6,6 +6,8 @@ export PATH=$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 # ~/.config/tmux/plugins
 export PATH=$HOME/.config/tmux/plugins/t-smart-tmux-session-manager/bin:$PATH
 
+export PATH=$HOME/.local/bin:$PATH
+
 # nix
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
@@ -99,7 +101,12 @@ bccc() {
         | xargs open
 }
 
+d() {
+  curl -sS http://localhost:8005/run\?commandName\=GetEntityOfType\&EntityType\=Command | jq 'keys[]' | fzf | xargs devmate_run --commandName
+}
+
 source ~/alias/git.sh
+source ~/alias/aliases.sh
 source ~/alias/env_vars.sh
 
 fvim(){
