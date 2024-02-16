@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# Set hostaddress as localhost if first argument is not defined otherwise use the first argument
+hostaddress=${1:-localhost}
+
+curl -sS http://$hostaddress:8005/run\?commandName\=GetEntityOfType\&EntityType\=Command | jq 'keys[]' | fzf | DEVMATE_HOST=$hostaddress xargs devmate_run --commandName

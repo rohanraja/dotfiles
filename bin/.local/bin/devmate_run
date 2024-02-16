@@ -2,6 +2,9 @@
 
 Args=""
 
+# set hostaddress as env DEVMATE_HOST or default to localhost
+hostaddress=${DEVMATE_HOST:-localhost}
+
 # Loop through all arguments
 while [[ "$#" -gt 0 ]]; do
 	key="$1"
@@ -28,4 +31,4 @@ while [[ "$#" -gt 0 ]]; do
 done
 
 echo $Args
-curl http://localhost:8005/run?$Args
+curl http://$hostaddress:8005/run?$Args

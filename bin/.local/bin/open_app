@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+OS="$(uname -s)"
+case "$OS" in
+Linux*) OS_TYPE="Linux" ;;
+Darwin*) OS_TYPE="Mac" ;;
+*) OS_TYPE="UNKNOWN" ;;
+esac
+
+# Call the appropriate function based on the detected OS
+if [ "$OS_TYPE" = "Linux" ]; then
+	# Call xdg-open command
+	xdg-open "$1"
+elif [ "$OS_TYPE" = "Mac" ]; then
+	# Call open command
+	open -a "$1"
+else
+	echo "Unsupported OS."
+fi

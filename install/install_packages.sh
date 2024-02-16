@@ -7,6 +7,11 @@ PACKAGES_FILE="install/packages.txt"
 install_ubuntu() {
 	echo "Detected Ubuntu. Installing packages..."
 	sudo apt-get update
+	sudo apt install snapd
+
+	# Install neovim from snap
+	sudo snap install --beta nvim --classic
+
 	while IFS= read -r package; do
 		sudo apt-get install -y "$package"
 	done <"$PACKAGES_FILE"

@@ -101,9 +101,12 @@ bccc() {
         | xargs open
 }
 
-d() {
-  curl -sS http://localhost:8005/run\?commandName\=GetEntityOfType\&EntityType\=Command | jq 'keys[]' | fzf | xargs devmate_run --commandName
-}
+
+# Devmate
+
+# Open devmate search with fzf
+alias d="dmate"
+alias dbeast="dmate beast"
 
 source ~/alias/git.sh
 source ~/alias/aliases.sh
