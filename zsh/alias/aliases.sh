@@ -18,6 +18,7 @@ alias bi='brew install'
 # Linux Shortcuts1
 alias ai='sudo apt-get install'
 alias au='sudo apt-get update'
+alias pci='sudo pacman -S'
 
 # UTILITY
 

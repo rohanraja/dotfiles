@@ -1,0 +1,33 @@
+super + shift + b
+    brave
+
+# Reload sxhkdrc
+super + shift + r
+    pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+# Show clipmenu
+super + shift + v
+    CM_LAUNCHER=rofi clipmenu \
+        -location 1 \
+        -m -3 \
+        -no-show-icons \
+        -theme-str '* \{ font: 10px; \}' \
+        -theme-str 'listview \{ spacing: 0; \}' \
+        -theme-str 'window \{ width: 20em; \}'
+
+# Generate password
+super + r ; g ; p
+    tr -dc "a-zA-Z0-9_#@.-" < /dev/urandom | head -c 14 | xclip -selection clipboard ; notify-send 'password generated' ''
+
+super + {_,shift +} {1-9}
+    i3-msg {workspace,move container to workspace} {1-9}
+
+super + shift + space
+    rofi -show run
+
+
+super + shift + l
+    i3lock
+
+` + 1
+    i3-msg '[con_mark="t"] scratchpad show'
