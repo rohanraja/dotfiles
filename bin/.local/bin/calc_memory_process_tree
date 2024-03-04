@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Function to calculate memory usage recursively
+calculate_memory() {
+	local parent_pid=$1
+	# Initialize memory usage of the current process
+	local mem=$(ps -o rss= -p $parent_pid 2>/dev/null)
+	# Default to 0 if not numeric
+	mem=$(echo $mem | awk '{print ($0+0)}')
+
+	# Get child PIDs
+	local children=$(ps -o pid= --ppid $parent_pid)
+
+	for child in $children; do
+		# Recursively calculate memory usage of child processes
+		local child_mem=$(calculate_memory $child)
+		mem=$(echo $mem $child_mem | awk '{print $1 + $2}')
+	done
+
+	echo $mem
+}
+
+# Check if a process ID (PID) is provided as an argument
+if [ -z "$1" ]; then
+	echo "Usage: $0 <ParentProcessPID>"
+	exit 1
+fi
+
+# Parent process PID
+PARENT_PID=$1
+
+# Calculate total memory recursively
+TOTAL_MEM=$(calculate_memory $PARENT_PID)
+
+# Convert KB to GB
+TOTAL_MEM_GB=$(echo "$TOTAL_MEM" | awk '{print $1/1024/1024}')
+
+echo "Total memory usage of process $PARENT_PID and its descendants: $TOTAL_MEM_GB GB"

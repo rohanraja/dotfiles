@@ -116,3 +116,5 @@ fvim(){
   nvim $(rg --files --hidden | fzf)
 }
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
