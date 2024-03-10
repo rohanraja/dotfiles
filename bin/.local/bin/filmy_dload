@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+
+url=$1
+
+title=$(curl -s "$1" | pup "title text{}")
+akmurl=$(curl -s "$1" | pup "input[value^=\"https://akm\"] attr{value}")
+
+# If the akmurl is empty, then the video is not hosted on akm, so we can't download it
+
+if [ -z "$akmurl" ]; then
+
+	akmurl=$(curl -s "$1" | pup "input[value^=\"https://d.akm\"] attr{value}")
+
+	hash=$(curl -s "$akmurl" | pup "input[name=\"hash\"] attr{value}")
+
+	curl "$akmurl" \
+		--output "$title.mp4" \
+		-L \
+		--data-raw "hash=$hash"
+	exit 0
+fi
+
+dlUrl=$(curl -s "$akmurl" | pup "form[action^=\"https://\"]:first-of-type attr{action}")
+
+echo $dlUrl
+
+wget -nc -O "$title.mp4" "$dlUrl"
