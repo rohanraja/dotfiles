@@ -27,8 +27,8 @@ trap 'rm -f "$LOCKFILE"' EXIT
 echo "Running script with parameter: $1"
 # Add your script logic here
 
-title_url_encoded=$(echo "$title" | sed 's/ /%20/g')
-seLen=$(curl -s http://beast:4000/api/search\?search\=$title_url_encoded | jq '.videos | length')
+seLen=$(curl --get --data-urlencode "search=$title" http://beast:4000/api/search | jq '.videos | length')
+echo $seLen
 
 # If seLen > 0 then exit
 if [ $seLen -gt 0 ]; then
