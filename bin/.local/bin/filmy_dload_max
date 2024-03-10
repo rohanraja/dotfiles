@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Define the URL to download
+url=$1
+
+# Define the base name for lock files
+lockfile_base="/tmp/filmy_lock"
+
+# Maximum number of instances
+max_instances=4
+
+# Continuously try to acquire a lock
+while :; do
+	acquired=false
+	for ((i = 1; i <= $max_instances; i++)); do
+		lockfile="${lockfile_base}_${i}.lock"
+
+		# Dynamically allocate a file descriptor for the lockfile
+		exec {lock_fd}>"$lockfile"
+		if [ $? -eq 0 ]; then
+			if flock -n "$lock_fd"; then
+				echo "Acquired lock on $lockfile"
+				# Run your script here
+				# /path/to/your_script.sh
+
+				echo "Starting download..."
+				filmy_dload "$url"
+				echo "Download complete."
+
+				# Release the lock and close the file descriptor
+				flock -u "$lock_fd"
+				exec {lock_fd}>&-
+				acquired=true
+				break
+			else
+				# Close the file descriptor if lock acquisition fails
+				exec {lock_fd}>&-
+			fi
+		fi
+	done
+
+	if $acquired; then
+		break
+	else
+		echo "Unable to acquire lock, retrying in 5 seconds..."
+		sleep 5
+	fi
+done

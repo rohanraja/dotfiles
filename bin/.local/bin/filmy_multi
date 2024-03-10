@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+
+urls=$(curl -s $1 | pup "figure a attr{href}")
+
+for url in $urls; do
+	echo "Downloading $url"
+	DEVMATE_HOST=rpi5 devmate_run --commandName DownloadFilmy --Url $url
+done
