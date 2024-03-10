@@ -6,6 +6,12 @@ url=$1
 title=$(curl -s "$1" | pup "title text{}")
 akmurl=$(curl -s "$1" | pup "input[value^=\"https://akm\"] attr{value}")
 
+# if "title.mp4" already exists, then we don't need to download it again
+if [ -f "$title.mp4" ]; then
+	echo "File already exists"
+	exit 0
+fi
+
 # If the akmurl is empty, then the video is not hosted on akm, so we can't download it
 
 if [ -z "$akmurl" ]; then
