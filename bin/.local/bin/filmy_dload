@@ -5,6 +5,27 @@ url=$1
 
 title=$(curl -s "$1" | pup "title text{}")
 akmurl=$(curl -s "$1" | pup "input[value^=\"https://akm\"] attr{value}")
+# Define the lock file with the parameter value
+#
+LOCKFILE="/tmp/my_script_lock_$title"
+
+# Check if lock file exists
+if [ -e "$LOCKFILE" ]; then
+	# If lock file exists, exit
+	echo "Another instance with parameter '$1' is already running."
+	exit 1
+fi
+
+# If lock file doesn't exist, create it
+touch "$LOCKFILE"
+
+# Ensure lock file is removed on script exit
+trap 'rm -f "$LOCKFILE"' EXIT
+
+# Your script logic goes here
+# For example:
+echo "Running script with parameter: $1"
+# Add your script logic here
 
 # if "title.mp4" already exists, then we don't need to download it again
 if [ -f "$title.mp4" ]; then
@@ -24,6 +45,7 @@ if [ -z "$akmurl" ]; then
 		--output "$title.mp4" \
 		-L \
 		--data-raw "hash=$hash"
+	rm -f "$LOCKFILE"
 	exit 0
 fi
 
@@ -32,3 +54,6 @@ dlUrl=$(curl -s "$akmurl" | pup "form[action^=\"https://\"]:first-of-type attr{a
 echo $dlUrl
 
 wget -nc -O "$title.mp4" "$dlUrl"
+
+# Remove lock file on script completion
+rm -f "$LOCKFILE"
