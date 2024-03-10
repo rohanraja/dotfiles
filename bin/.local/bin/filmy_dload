@@ -51,7 +51,18 @@ fi
 
 dlUrl=$(curl -s "$akmurl" | pup "form[action^=\"https://\"]:first-of-type attr{action}")
 
-echo $dlUrl
+if [ -z "$dlUrl" ]; then
+
+	echo "DL Url Empty"
+	hash=$(curl -s "$akmurl" | pup "input[name=\"hash\"] attr{value}")
+
+	curl "$akmurl" \
+		--output "$title.mp4" \
+		-L \
+		--data-raw "hash=$hash"
+	rm -f "$LOCKFILE"
+	exit 0
+fi
 
 wget -nc -O "$title.mp4" "$dlUrl"
 
