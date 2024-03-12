@@ -5,5 +5,5 @@ urls=$(curl -s $1 | pup "figure a attr{href}")
 
 for url in $urls; do
 	echo "Downloading $url"
-	DEVMATE_HOST=rpi5 devmate_run --commandName DownloadFilmy --Url $url &
+	DEVMATE_HOST=192.168.0.192 devmate_run --commandName DownloadFilmy --Url $url &
 done
