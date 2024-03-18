@@ -118,3 +118,10 @@ fvim(){
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+gch() {
+ git checkout "$(git branch --all | fzf| tr -d '[:space:]')"
+}
+
+export LC_CTYPE=en_US.UTF-8
