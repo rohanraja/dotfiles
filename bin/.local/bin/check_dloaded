@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+title=$1
+
+seLen=$(curl -s --get --data-urlencode "search=$title" http://192.168.0.192:4000/api/search | jq '.videos | length')
+# If seLen > 0 then exit
+echo $seLen
