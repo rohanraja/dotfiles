@@ -1,0 +1,15 @@
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+192.168.0.213 rpi5
+192.168.0.192 beast
+192.168.0.238 rpi3
+192.168.0.103 m2-lan
+192.168.0.232 m2
+192.168.0.214 rpi5-wifi
+52.179.120.205 algo-vm
+127.0.0.1 dev.new.expensify.com
+20.244.33.135 rohan-hyd
+192.168.1.50 lenovo-linux
+192.168.0.191 win11
+192.168.1.50 ydl

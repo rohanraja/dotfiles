@@ -3,4 +3,12 @@
 # Set hostaddress as localhost if first argument is not defined otherwise use the first argument
 hostaddress=${1:-localhost}
 
+# If 2nd argument is defined, use it as the commandName, otherwise use fzf to select the commandName.
+
+if [ -n "$2" ]; then
+	# Forward all other arguments to devmate_run
+	DEVMATE_HOST=$hostaddress devmate_run --commandName $2 "${@:3}"
+	exit
+fi
+
 curl -sS http://$hostaddress:8005/run\?commandName\=GetEntityOfType\&EntityType\=Command | jq 'keys[]' | fzf | DEVMATE_HOST=$hostaddress xargs devmate_run --commandName

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#
+
+# Ensure dotfiles/network/hosts file is copted to /etc/hosts
+
+# Add entries to /etc/hosts
+sudo cp $DOTFILES_PATH/network/hosts /etc/hosts
